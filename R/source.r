@@ -10,11 +10,20 @@ load.all = function(path, pattern = '*.csv', verbose = T) {
   
   for (f in files) {
     name = strsplit(f, split = '/')[[1]]
-    data[[name[length(name)]]] = data.table::fread(f)
+    if (grepl('.xlsx', f)) {
+      data[[name[length(name)]]] = openxlsx::read.xlsx(f)
+    } else {
+      data[[name[length(name)]]] = as.data.frame(data.table::fread(f))
+    }
+  }
+  
+  if ("Date_Time" %in% names(data)) {
+    data$Date_Time = as.POSIXct(data$Date_time)
   }
   
   data
 }
+
 
 concat = function(data, verbose = T) {
   res = data[[1]]
@@ -42,7 +51,7 @@ concat = function(data, verbose = T) {
       }
     }
     
-    res = rbind(res, data[[i]], fill = T)
+    res = rbind(res, data[[i]])
   }
   
   ## Retunr
