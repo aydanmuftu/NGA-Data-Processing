@@ -43,3 +43,8 @@ saveRDS(chl, file = '_rdata/CHL.rdata')
 write.xlsx(chl, file = '_rdata/CHL.xlsx')
 
 
+
+### Load POC
+temp = load.all('Data/POC/')
+poc = concat(temp)
+saveRDS(poc, file = '_rdata/POC.rdata')
