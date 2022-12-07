@@ -5,17 +5,53 @@ events = load.all('Data/Event Logs/', pattern = '.xlsx')
 events = concat(events)
 events$GPS_Time = conv.time.excel(as.numeric(events$GPS_Time))
 
+
 ## Load all TSG data
-temp = load.all('Data/Underway/', pattern = 'tsg')
+temp = load.all('Data/Underway/TSG/', pattern = '*')
 pos = concat(temp)
 names(pos) = gsub('_', '', make.names(names(pos)))
+pos = pos[,order(names(pos))]
+
+for (i in 1:nrow(pos)) {
+  if (is.na(pos$DateTime.UTC.[i]) & !is.na(pos$YYYY[i])) {
+    pos$DateTime.UTC.[i] = make.time(year = pos$YYYY[i],
+                                     month = pos$MM[i],
+                                     day = pos$DD[i],
+                                     hour = pos$hh[i],
+                                     minute = pos$mm[i],
+                                     second = pos$ss[i],
+                                     tz = 'UTC')
+  }
+  
+  ## Fix lat/lon if not present
+  if (is.na(pos$Longitude[i])) { pos$Longitude[i] = pos$Longitude.1[i]}
+  if (is.na(pos$Longitude[i])) { pos$Longitude[i] = pos$Longitude.decimaldegreeseast.[i]}
+  
+  if (is.na(pos$Latitude[i])) { pos$Latitude[i] = pos$Latitude.1[i]}
+  if (is.na(pos$Latitude[i])) { pos$Latitude[i] = pos$Latitude.decimaldegreesnorth.[i]}
+  
+  ## Fix T/S
+  if (is.na(pos$Temperature.C.[i])) { pos$Temperature.C.[i] = pos$TemperatureUNCSW.C.[i]}
+  if (is.na(pos$Temperature.C.[i])) { pos$Temperature.C.[i] = pos$TemperatureTurner.C.[i]}
+  
+  if (is.na(pos$Salinity.psu.[i])) { pos$Salinity.psu.[i] = pos$SAL[i]}
+}
+
+pos = data.frame(Cruise = pos$Cruise,
+                 Datetime = pos$DateTime.UTC.,
+                 Longitude = pos$Longitude,
+                 Latitude = pos$Latitude,
+                 Temp = pos$Temperature.C.,
+                 Sal = pos$Salinity.psu.)
+
+summary(pos)
 
 saveRDS(pos, file = '_rdata/TSG.rdata')
 write.xlsx(pos, file = '_rdata/TSG.xlsx')
 
 
 map = make.map.nga()
-add.map.points(map, pos$Longitude.decimaldegreeseast., pos$Latitude.decimaldegreesnorth., pch = '.')
+add.map.points(map, pos$Longitude, pos$Latitude, pch = '.', col = make.qual.pal(pos$Cruise, pal = 'kelly'))
 
 
 ## Load Chlorophyll

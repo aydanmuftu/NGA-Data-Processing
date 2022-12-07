@@ -15,6 +15,7 @@ load.all = function(path, pattern = '*.csv', verbose = T) {
     } else {
       data[[name[length(name)]]] = as.data.frame(data.table::fread(f))
     }
+    names(data[[name[length(name)]]]) = make.names(names(data[[name[length(name)]]]), unique = T)
   }
   
   if ("Date_Time" %in% names(data)) {
