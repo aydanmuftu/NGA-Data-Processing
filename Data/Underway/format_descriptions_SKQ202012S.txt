@@ -1,0 +1,1144 @@
+﻿LDS format descriptions for SKQ202012S
+---------------------------------------
+The directories under lds/raw contains all data logged by the LDEO Data System (LDS).
+Many of R/V Sikuliaq's underway sensors that output ASCII serial data such as 
+GPS navigation, gravity, weather and surface water properties are logged by LDS.
+LDS precedes each line of serial data with the logger label and time stamp delimited 
+by tabs. Everything after the time stamp is generally straight from the 
+instrument unmodified with the few exceptions noted below. 
+
+Many of the instruments on Sikuliaq that output serial data will conform to the 
+NMEA 0183 standard. NMEA 0183 is a combined electrical and data specification for 
+communication between marine electronics such as echo sounder, sonar, anemometer, 
+gyrocompass, autopilot, GPS receivers and many other types of instruments. It has been 
+defined by, and is controlled by, the National Marine Electronics Association.
+The NMEA 0183 standard uses a simple ASCII, serial communications protocol that defines 
+how data are transmitted in a "sentence" from one "talker" to multiple "listeners" at a 
+time. Sensors that output NMEA sentences will be noted below. More detailed information
+on the meaning of the sentences can generally be looked up on the internet.
+
+The following is a description of each of the individual sensors logged by LDS -
+------------------------------------------------------------------------------------------------
+adcp_speedlog:
+
+  UHDAS ADCP Speed Log from Workhorse 300 (nearest surface bin)
+  Location: Centerboard
+  Sample rate: variable
+
+  Example data lines:
+    adcp_speedlog	2019-03-01T11:08:35.5956Z	$VDVBW,8.91,0.07,A,9.02,0.88,A*5D
+	adcp_speedlog	2019-03-01T11:08:39.2117Z	$VDVBW,9.03,0.09,A,9.47,1.04,A*5D
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+   $--VBW,speed,speed,status,speed,speed,status*checksum
+      -Longitudinal water speed, knots
+      -Transverse water speed, knots 
+      -Status: Water speed, A = Data valid
+      -Longitudinal ground speed, knots 
+      -Transverse ground speed , knots
+      -Status, Ground speed, A = Data valid
+
+------------------------------------------------------------------------------------------------
+ais_r4-navigator_bridge:
+
+  Bridge navigation R4 AIS Class A Transponder System
+
+  Sample rate: variable
+
+  Example data lines:
+	ais_r4-navigator_bridge	2019-02-28T00:00:00.7961Z	!AIVDM,1,1,,A,ENkb9V21FR0Vh;Uh;0Tah@@@@@@;`j6@=3DVh00003vP000,2*16
+	ais_r4-navigator_bridge	2019-02-28T00:00:00.9246Z	!AIVDO,1,1,,,152gEJ5000o>>tLJ4gdL`9b00000,0*53
+	ais_r4-navigator_bridge	2019-02-28T00:00:01.4201Z	$PSTT,10A,20190228,000001*6C
+	ais_r4-navigator_bridge	2019-02-28T00:00:23.8870Z	$AIALR,201110.00,008,V,V,AIS: MKD connection lost*7F
+	
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+  
+   !AIVDM,number of sentences,sentence number,,AIS channel,encoded AIS data,end of data*checksum
+      -!AIVDM is received data from other vessels
+	  -!AIVDO is own vessels information
+
+   $PSTT,10A,UTC date,UTC time*checksum
+   $AIALR - alarm message
+
+------------------------------------------------------------------------------------------------
+ek80_depth:
+
+  Depth output from the Simrad EK80, ES18 split-beam transducer
+  Location: Centerboard
+  Sample rate: variable
+
+  Example data lines:
+    ek80_depth	2019-03-01T11:50:02.6900Z	$EKDBS,335.75,f,102.34,M,55.96,F*14
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+   $--DBS,depth,f,depth,M,depth,F*checksum
+      -Water depth below surface, feet
+      -Water depth below surface, Meters 
+      -Water depth below surface, Fathoms
+
+------------------------------------------------------------------------------------------------
+flow_krohne_fwd:
+  
+  KROHNE OPTIFLUX 5000 Electromagnetic flowmeter measuring surface seawater flow being 
+  delivered to the two TSGs and Turner C6 in the main lab. These electromagnetic
+  flowmeters are designed exclusively to measure the flow and conductivity of electrically
+  conductive, liquid media. 
+
+  The interface to this instrument is via Modbus RTU over RS485 so custom software had 
+  to be written to extract the required data from the sensor. The logged data format is 
+  unique to Sikuliaq.
+
+  Location: In main lab. Water source forward seachest.
+  Sample rate: 1 per second
+
+  Example data line:
+    flow_krohne_fwd  2014-12-11T20:19:01.7029Z  0.558,5.93,27.38,0.65940
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    flow speed [m/s]
+    volume flow [l/min]
+    coil temperature [C]
+    conductivity [S/m]
+
+------------------------------------------------------------------------------------------------
+flow_krohne_pco2:
+  
+  KROHNE OPTIFLUX 5000 Electromagnetic flowmeter measuring surface seawater flow being 
+  delivered to the pCO2 system equilibrator in the wet lab. These electromagnetic
+  flowmeters are designed exclusively to measure the flow and conductivity of electrically
+  conductive, liquid media. 
+
+  The interface to this instrument is via Modbus RTU over RS485 so custom software had 
+  to be written to extract the required data from the sensor. The logged data format is 
+  unique to Sikuliaq.
+
+  Location: In wet lab. Water source forward seachest.
+  Sample rate: 1 per second
+
+  Example data line:
+    flow_krohne_pco2	2017-06-01T18:15:27.9012Z	1.204,71711.54,-271.97,1.18521
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    flow speed [m/s]
+    volume flow [l/min]
+    coil temperature [C]
+    conductivity [S/m]
+
+------------------------------------------------------------------------------------------------
+fluoro_turner-c6:
+
+  Turner Designs C6 Multi-Sensor Platform with five Cyclops-7 submersible sensors located in main lab.
+  Measures the following parameters in surface seawater from the forward seachest:
+
+  C6 Multi-Sensor Platform 
+  Model No: 2200-000
+  Serial No: 220224
+ 
+  Cyclops-7 submersible sensors
+  Model No: 2100-000
+  Phycoerythrin, Serial Number: 2102974
+  CDOM, Serial Number: 2102976
+  Chlorophyll a, Serial Number: 2102978
+  Crude Oil, Serial Number: 2102980
+  Turbidity, Serial Number: 2102982
+
+  Location: In main lab. Water source forward seachest.
+  Sample rate: 1 per second
+
+  Example data line:
+    fluoro_turner-c6  2014-11-29T00:00:00.8851Z  11/29/14  0:00:01     79.88    20.60    101.32    44.32    7.28   9.38    21.05
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    C6 Date
+    C6 Time
+    Phycoerythrin(RFU)
+    CDOM(RFU)
+    Chlorophyll_a(RFU)
+    Crude Oil(RFU)
+    Turbidity(RFU)
+    Depth(m) 
+    Temp(C)
+	
+	Note: This instrument is currently not installed.
+
+------------------------------------------------------------------------------------------------
+fluoro_wetstar_fwd:
+
+  WET Labs Chlorophyll-a flow-through fluorometer employs an optical flow tube design and
+  provides calibrated, high-resolution measurement of mechanically stimulated bioluminescence.
+
+  Model: WSCHL
+  Serial Number: 1418
+  Location: Main lab. Water source forward seachest.
+  Sample rate: 1 per second
+
+  Example data line:
+    fluoro_wetstar_fwd	2019-07-01T22:42:41.8523Z	*+02047.00
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Voltage (mV)
+
+------------------------------------------------------------------------------------------------
+gnss_cnav:
+
+  C-Nav3050 Globally Corrected Global Positioning System (GcGPS).
+  C-Nav Subscription Services were active for this entire cruise.
+
+  Note: C-Nav Subscription Services requires a clear line-of-sight of their geostationary satellites.
+  The cnav antenna was relocated to the top of mainmast and sits between the SeaPath antennas with clear access
+  to the satellites. This was completed in February of 2016. Antenna was re-surveyed into the ships coordinate 
+  system by IMTEC March 5th, 2016.
+
+  S/N: 13669
+  P/N: 92-310413-3002LF
+
+  Location: Antenna at top centerline on main mast.
+  Sample rate: 1 per second
+
+  Example data lines:
+    gnss_cnav  2015-01-10T03:23:13.0575Z  $GNZDA,032313.00,10,01,2015,00,00*7E
+    gnss_cnav  2015-01-10T03:23:13.1366Z  $GNRMC,032313.00,A,1807.457933,N,16228.301394,E,1.70,231.0,100115,0,E,D*00
+    gnss_cnav  2015-01-10T03:23:13.1767Z  $GNVTG,231.0,T,,M,1.70,N,3.15,K,D*17
+    gnss_cnav  2015-01-10T03:23:13.2183Z  $PNCTR,NAVQ,032313.00,3D,C2-SET,DUAL*24
+    gnss_cnav  2015-01-10T03:23:13.3072Z  $GNGGA,032313.00,1807.457933,N,16228.301394,E,2,17,0.7,50.860,M,0.000,M,3.0,0336*52
+    gnss_cnav  2015-01-10T03:23:13.3806Z  $GNGST,032313.00,0.2704,0.0601,0.0498,0.6302,0.0601,0.0498,0.1475*78
+    gnss_cnav  2015-01-10T03:23:13.4166Z  $PNCTR,RXQ,032313,Y,13.25,10,0*43
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII messages
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+    $..ZDA,time,day,month,year,offset_hour,offset_min*checksum
+    $..RMC,time,status,lat,N/S,lon,E/W,sog,cog,date,variation,E/W,mode*checksum
+    $..VTG,cog,T,cog,M,sog,N,sog,K,mode*checksum
+    $..GGA,time,lat,N/S,lon,E/W,quality,used,hdop,alt,M,separation,M,age,id*checksum
+    $..GST,time,rms,majoraxis,minoraxis,orientation,laterr,lonerr,alterr*checksum
+
+    $PNCTR,NAVQ,time,nav mode,type,solution mode*checksum
+      -The UTC time of the message in HHMMSS.
+      -Navigation Mode(2D,3D,...).
+      -GcGPS Correction Signal Type
+      -Solution Mode(Single or Dual frequency).
+
+    $PNCTR,RXQ,time,Y/N,signal,idle,bad*checksum
+      -The UTC time of the message in HHMMSS.
+      -Either a Y (Yes) or N (No) to indicate the status of the C-Nav signal lock.
+      -The C-Nav correction service signal (or carrier) to noise ration.
+      -The percentage of Idle packet messages being received (over the last 4 seconds).
+      -The percentage of Bad packet messages received (over the last 4 seconds) 
+
+   Note: NMEA messages begin with "$GN..." if tracking both GPS and GLONASS, and "$GP..." if only tracking GPS.
+   
+------------------------------------------------------------------------------------------------
+gnss_mps865:
+
+  Trimble MPS865 Modular GNSS Heading Receiver for real-time and post-processing applications.
+  Satellite signals include GPS, GLONASS, QZSS, as well as SBAS.
+  Two Trimble GA830 antennas in athwartship arrangement provide fixed heading solution.
+  Azimuth offset is 89.46 degrees, and vector length is 3.656 meters.
+  
+  Serial Number: 5751R95527
+  Location: Antennas on main mast instrument platform
+  Sample rate: 10 per second
+
+  Example data lines:
+    gnss_mps865	2019-11-18T10:22:48.4628Z	$GPZDA,102248.50,18,11,2019,,*6D
+	gnss_mps865	2019-11-18T10:22:48.4704Z	$GPGGA,102248.50,7139.5054506,N,15211.0747110,W,2,21,0.6,22.257,M,-1.171,M,2.0,0131*7D
+	gnss_mps865	2019-11-18T10:22:48.4749Z	$GPVTG,286.91,T,271.25,M,008.157,N,015.107,K,D*28
+	gnss_mps865	2019-11-18T10:22:48.4765Z	$GPHDT,286.64,T*0B
+	gnss_mps865	2019-11-18T10:22:48.4857Z	$PASHR,ARR,2,2,14,102248.50,3.342,0.558,1.432,0.220,0.214,0.292,0.038805,-0.183990,-0.099694,2,0,0,1*24
+	gnss_mps865	2019-11-18T10:22:48.4905Z	$PASHR,ARA,0,102248.50,0.006,,0.054,0.091,,0.154,0*23
+  
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII messages
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+    $..ZDA,time,day,month,year,offset_hour,offset_min*checksum
+    $..GGA,time,lat,N/S,lon,E/W,quality,used,hdop,alt,M,separation,M,age,id*checksum
+    $..VTG,cog,T,cog,M,sog,N,sog,K,mode*checksum
+    $..HDT,heading,T*checksum
+    
+	ARR: Vector & Accuracy
+	$PASHR,ARR,d0,d1,d2,m3,f4,f5,f6,f7,f8,f9,f10,f11,f12,d13,d14,d15,d16*cc
+	
+	ARA: True Heading (this message delivers roll-related data due to antenna installation)
+	$PASHR,ARA,f1,m2,f3,f4,f5,f6,f7,f8,f9*cc
+	
+	Please see MPS865 User Guide for descriptions and ranges of $PASHR parameters.
+  
+  Note: The antennas have not been surveyed into the ship's coordinate system.
+		Therefore positions are referenced to the primary antenna location.
+  
+------------------------------------------------------------------------------------------------
+grav_bgm3_222:
+
+  Gravimeter BGM-3, Serial Number: 222
+
+  The interface to the BGM-3 meters is a second (third?) generation of the original interface 
+  designed by Joe Stennett at Lamont in the 1980s.
+
+  Location: Aft inboard wall of electronic workshop, 1-12-1
+  Sample rate: 1 per second
+
+  Example data lines:
+   grav_bgm3_222	2014-11-17T20:18:10.3194Z	04:024671 00
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Interface_Counter_period:Raw_Counts
+    Status
+
+   Status:
+     00 = data valid
+     01 = platform not valid(e.g. gyro)
+     02 = sensor not valid
+     03 = both platform and sensor not valid
+
+------------------------------------------------------------------------------------------------
+gyro_1:
+
+  NAVIGAT 2100 Fiber-Optic Gyrocompass and Attitude Reference System. Primary.
+
+  Location: Forward bulkhead of upper lab, 03-32-2
+  Sample rate: 10 per second. Downsampled to 2 per second in log files.
+
+  Example data lines:
+    gyro_1  2014-12-11T00:16:03.5470Z  $HEHDT,107.38,T*12
+    gyro_1  2014-12-11T00:16:03.5984Z  $TIROT,-0000.6,A*20
+    gyro_1  2014-12-11T00:16:03.8972Z  $PPLAN,,,,,,,,2*71
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+    $--HDT,heading,T*checksum
+    $--ROT,rate of turn,status*checksum
+
+------------------------------------------------------------------------------------------------
+gyro_2:
+
+  NAVIGAT 2100 Fiber-Optic Gyrocompass and Attitude Reference System. Secondary.
+
+  Location: Forward bulkhead of upper lab, 03-32-2
+  Sample rate: 10 per second. Downsampled to 2 per second in log files.
+
+  Example data lines:
+    gyro_2  2014-12-11T22:05:38.7155Z  $PPLAN,,,,,,,,1*72
+    gyro_2  2014-12-11T22:05:39.0194Z  $TIROT,-0039.0,A*2C
+    gyro_2  2014-12-11T22:05:39.0669Z  $HEHDT,106.27,T*1D
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+    $--HDT,heading,T*checksum
+    $--ROT,rate of turn,status*checksum
+
+------------------------------------------------------------------------------------------------
+ins_seapath_position:
+
+  Kongsberg Seapth 320+ Precise Heading, Attitude and Positioning Sensor.
+  The product combines inertial technology together with GPS and GLONASS satellite
+  signals. Core components in the product are the MRU 5+ inertial sensor, the two 
+  combined GPS/GLONASS receivers, the Processing and HMI Unit.
+
+  RTCM corrections provided by the C-Nav3050.
+
+  The navigation reference point used is the ship's granite bock. The origin for 
+  the vessel coordinate system (0, 0, 0) is the center of the granite block located
+  in science hold, 2-67-0. 
+
+  Sample rate: 1 per second
+
+  Example data lines:
+    ins_seapath_position  2014-12-11T22:09:32.4715Z  $GPZDA,220932.45,11,12,2014,,*6B
+    ins_seapath_position  2014-12-11T22:09:32.5563Z  $GPGGA,220932.45,2207.733438,N,16242.262661,W,2,09,1.1,7.25,M,4.62,M,1.2,0001*6A
+    ins_seapath_position  2014-12-11T22:09:32.6020Z  $GPVTG,111.01,T,101.59,M,8.5,N,15.7,K,D*14
+    ins_seapath_position  2014-12-11T22:09:32.6841Z  $GPRMC,220932.45,A,2207.733438,N,16242.262661,W,8.5,111.01,111214,9.4,E,D*16
+    ins_seapath_position  2014-12-11T22:09:32.7451Z  $GPGST,220932.45,0.49,0.206,0.193,32,0.202,0.197,0.439*42
+    ins_seapath_position  2014-12-11T22:09:32.8020Z  $GPGBS,220932.45,0.06,-0.03,0.44,19,0.00,0.46,0.51*40
+    ins_seapath_position  2014-12-11T22:09:32.8229Z  $GPHDT,104.68,T*0E
+    ins_seapath_position  2014-12-11T22:09:32.8450Z  $PSXN,20,0,0,0,0*3B
+    ins_seapath_position  2014-12-11T22:09:32.8825Z  $PSXN,23,1.28,1.93,104.68,-0.24*18
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+    $..ZDA,time,day,month,year,offset_hour,offset_min*checksum
+    $..RMC,time,status,lat,N/S,lon,E/W,sog,cog,date,variation,E/W,mode*checksum
+    $..VTG,cog,T,cog,M,sog,N,sog,K,mode*checksum
+    $..GGA,time,lat,N/S,lon,E/W,quality,used,hdop,alt,M,separation,M,age,id*checksum
+    $..GST,time,rms,majoraxis,minoraxis,orientation,laterr,lonerr,alterr*checksum
+    $..HDT,heading,T*checksum
+    $..GBS,UTC,Laterr,Lonerr,Alterr,SVID,Det,Bias,StdDev*checksum
+
+    $PSXN,20,horiz-qual,hgt-qual,head-qual,rp-qual*checksum
+    $PSXN,23,roll,pitch,heading,heave*checksum
+	
+	Note: The 'ins_seapath_10hz' logger uses the talker ID $IN, and has a faster sample rate of 10 per second. 
+   
+------------------------------------------------------------------------------------------------
+mb_em302_centerbeam:
+
+  Nearest nadir centerbeam depth from the multibeam EM302. The data is extracted directly from the 
+  Kongsberg XYZ88 datagram. Note that there are two timestamps included. The first timestamp is 
+  the time the datagram is received by LDS and logged. The second timestamps is the time extracted 
+  from the XYZ88 header which represents the time the data is valid. This datagram does not include 
+  latitude/longitude so this information must be obtained from a separate GPS source. Note that the 
+  time of the GPS latitude/longitude is closest to the LDS timestamp.
+
+  The logged data format is unique to Sikuliaq.
+
+  Sample rate: variable
+
+  Example data lines:
+    mb_em302_centerbeam  2014-12-11T22:47:00.4684Z  $EMCTR,2014,12,11,22:46:48.730,22.101408,-162.613610,4567.00,288*56
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC] (Note: This is the time the datagram was received by LDS)
+    ID [$EMCTR]
+    Year,Month,Day,Hour:Min:Sec (Note: This is the time from the Kongsberg XYZ88 datagram header)
+    Latitude [Decimal Degees]
+    Longitude [Decimal Degees]
+    Depth [Meters]
+    Number of Beams
+    CheckSum
+
+------------------------------------------------------------------------------------------------
+mb_em710_centerbeam:
+
+  Nearest nadir centerbeam depth from the multibeam EM710. The data is extracted directly from the 
+  Kongsberg XYZ88 datagram. Note that there are two timestamps included. The first timestamp is 
+  the time the datagram is received by LDS and logged. The second timestamps is the time extracted 
+  from the XYZ88 header which represents the time the data is valid. This datagram does not include 
+  latitude/longitude so this information must be obtained from a separate GPS source. Note that the 
+  time of the GPS latitude/longitude is closest to the LDS timestamp.
+
+  The logged data format is unique to Sikuliaq.
+
+  Sample rate: variable
+
+  Example data lines:
+    mb_em710_centerbeam 2014-12-09T00:42:29.8146Z  $EMCTR,2014,12,09,00:42:28.954,25.616626,-172.513725,111.31,350*6B
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC] (Note: This is the time the datagram was received by LDS)
+    ID [$EMCTR]
+    Year,Month,Day,Hour:Min:Sec (Note: This is the time from the Kongsberg XYZ88 datagram header)
+    Latitude [Decimal Degees]
+    Longitude [Decimal Degees]
+    Depth [Meters]
+    Number of beams in ping
+    CheckSum
+	
+------------------------------------------------------------------------------------------------
+mbari_isus_fwd:
+
+	In Situ Ultraviolet Spectrophotometer (ISUS) is a real time, chemical free sensor for
+	measuring nitrate concentration in seawater. The instrument is programmed to output full
+	ASCII frames and scheduled on a 5 minute duty cycle to conserve lamp life.
+	
+	Model: Satlantic MBARI-ISUS V3
+	Serial Number: 0248 & 077
+	Location: Main lab. Water source forward seachest.
+	Sample rate: 2-3 samples every 5 minutes
+	
+	Example data line:
+	mbari_isus_fwd	2017-06-06T11:25:31.9325Z	SATNLF0204,2017157,11.425316,1.25,-12.88,56.93,0.18,0.000177,22.12,21.56,22.89,397604,14.22,11.95,5.01,11.44,14145.40,164.32,1125.20,1173.62,1118,1123,1129,1134,1122,1120,1127,1132,1129,1143,1138,1158,1133,1145,1134,1153,1152,1151,1170,1163,1184,1225,1289,1426,1633,1989,2519,3261,4247,5459,6940,8621,10491,12537,14650,16789,18932,20991,22805,24372,25617,26447,26825,26836,26497,25956,25309,24625,24017,23556,23238,23130,23149,23431,23833,24428,25150,25993,26965,28025,29135,30325,31539,32717,33841,34868,35767,36399,36746,36807,36497,35833,34851,33650,32276,30781,29275,27821,26386,25122,23989,23005,22147,21436,20825,20355,20022,19765,19619,19567,19610,19735,19927,20211,20553,20949,21386,21865,22362,22824,23271,23674,23956,24144,24208,24126,23940,23607,23133,22589,21954,21293,20593,19921,19251,18631,18078,17547,17086,16701,16383,16133,15947,15838,15783,15764,15827,15916,16062,16259,16472,16759,17036,17369,17720,18079,18465,18849,19269,19669,20061,20485,20880,21236,21534,21841,22091,22287,22429,22518,22533,22508,22409,22229,22018,21713,21383,20989,20521,20080,19586,19116,18645,18149,17664,17207,16738,16281,15816,15369,14911,14486,14075,13683,13324,13000,12700,12437,12202,12009,11842,11698,11564,11443,11346,11239,11171,11095,10993,10898,10805,10739,10645,10590,10523,10471,10417,10365,10295,10263,10234,10225,10193,10173,10165,10143,10153,10125,10096,10073,10033,10007,9939,9895,9820,9765,9682,9590,9511,9418,9316,9176,9018,8824,8645,8445,8287,8133,7964,7833,7713,7572,7475,7371,7303,7197,7063,6891,6727,6590,6451,6334,6231,6128,6033,5986,5906,5832,5741,5699,5668,5610,5445,5150,4755,4755,58
+	
+	Field Descriptions: (see ISUS-V3-Manual.pdf for more detail)
+		LDS Logger ID
+		LDS Time Stamp [UTC]
+		INSTRUMENT
+		DATE
+		TIME
+		NTR_CONC
+		AUX1
+		AUX2
+		AUX3
+		RMS ERROR
+		T_INT
+		T_SPEC
+		T_LAMP
+		LAMP_TIME
+		HUMIDITY
+		VOLT_12
+		VOLT_5
+		VOLT_MAIN
+		REF AVG
+		REF STD
+		SW DARK
+		SPEC AVG
+		CHANNEL(λ1)
+		CHANNEL(λn)
+		CHANNEL(λ256)
+		CHECK SUM
+		TERMINATOR
+
+------------------------------------------------------------------------------------------------
+met_met4a_fwdmast:
+
+  Paroscientific Meteorological Measurement System
+  Model: MET4A
+  Serial Number: 146581
+  Location: forward mast
+  Sample Rate: approximately 1 ever 2 seconds
+  
+  Example data lines:
+    met_met4a_fwdmast	2019-11-15T04:57:25.2081Z	$WIXDR,PRESS,1.017845,bar,s/n146581,TEMP,-13.43,C,RH,86.15,%RH,s/n20268722,FAN,1
+
+  Field Descriptions:
+    LDS Logger ID
+	LDS Time Stamp [UTC]
+	ID [NMEA-style tag]
+	Barometric Pressure [bar]
+	Digiquartz pressure sensor serial number
+	Air Temperature [deg C]
+	Relative Humidity [%]
+	RH/temperature probe serial number
+	Fan Status [0 = not acceptable, 1 = acceptable speed]
+
+------------------------------------------------------------------------------------------------
+met_ptu307:
+
+  Vaisala Combined Pressure, Humidity, and Temperature Transmitter
+  Model: PTU307
+  Serial Number: J1620009
+  Location: forward mast
+  Sample rate: 1 every 5 seconds
+
+  Example data lines:
+    met_ptu307  2014-12-11T22:57:50.4649Z  N     0 P=  1016.8 hPa   T= 24.5 'C RH= 68.0 %RH
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Transmitter status [7 character field, for example:
+        N     0    no heating
+        h   115    probe heating active, power 115/255
+        H 159.0    purge heating active, temperature 159C
+        S 115.0    purge cooling active, temperature 115C
+        X  95.0    sensor heating active, temperature 95C ]
+    Atmospheric pressure[hPa]
+    Air Temperature[C]
+    Relative Humidity[%]
+	
+    Probe heating is enabled with the following settings:
+      > heat                                                                              
+	  Probe heat     : ON
+	  Interval       : 10
+	  Min. pwr       : 18
+	  Step           : 1
+	  PID intv.      : 2
+	  Target         : 2.5
+	  P              : 15.0000
+	  I              : 0.0500
+	  D              : 0.0000
+	  EMAX           : 2000
+
+    Sensor heating is enabled with the following settings:
+      > xheat
+      Extra heat	 : ON
+      RH limit       : 95 %RH
+      Temperature    : 100 'C
+      Duration       : 30 s
+      
+    (xheat does not appear to work when probe heating is enabled)
+
+    Automatic chemical purge is enabled with the following settings:
+      > pur
+      Interval Purge : ON
+      Interval       : 720 min
+      Power-up Purge : OFF
+      Duration       : 120 s
+      Settling       : 240 s
+      Temperature    : 160 'C
+      Temp. diff.    : 0.5 'C
+	  
+	Data filtering is enabled with the following settings:
+	  > filt
+	  Filter		 : ON
+	  EXT factor	 : 0.030
+	  
+	  > avrg
+	  P1 average	 : 1 s
+
+------------------------------------------------------------------------------------------------
+oxygen_sbe43_fwd:
+
+  Sea-Bird SBE 43 Dissolved Oxygen (DO) sensor.
+  Measures dissolved oxygen in surface seawater from forward seachest.
+
+  Model: SBE43
+  Serial Number: 3582
+  Location: Main lab. Water source forward sea chest
+  Sample rate: 1 second
+
+  Example data line:
+    oxygen_sbe43_fwd	2016-09-17T23:59:23.5394Z	+02.108
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Voltage output [VDC]
+
+------------------------------------------------------------------------------------------------
+oxygen_sbe43_fwd_calc:
+
+  Sea-Bird SBE 43 Dissolved Oxygen (DO) sensor.
+  Computed dissolved oxygen in surface seawater. Uses Sea-Bird equation with oxygen saturation value.
+  Temperature and salinity values come from tsg_sbe45_fwd.
+  
+  Model: SBE43
+  Serial Number: 3582
+  Location: Main lab. Water source forward sea chest
+  Sample rate: 1 second
+
+  Example data line:
+    oxygen_sbe43_fwd_calc	2016-09-17T23:59:23.5394Z	2.1080,0.4605,27.8756,8.319,7.983
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Voltage output [VDC]
+	Temperature [C]
+	Salinity [psu]
+	Oxygen Solubility [ml/L]
+	Dissolved Oxygen [ml/L]
+
+------------------------------------------------------------------------------------------------
+pco2_ldeo_merge:
+
+  LDEO pCO2 seawater sensor
+  Location: Wet lab. Water source forward seachest in bow thruster room
+  Sample rate: 1 every 3 minutes
+
+  The original sensor format has been modified by pre-pending the logger name and logger timestamp and appending the 
+  additional ship supplied parameters lat, lon, cog, sog, sst, salinity, baro, wind speed, and wind dir.
+
+  Field Descriptions:
+    Log_Name Log_Time Date-Time, CO2(mvolts),Cell Temp(C),Baro Pr,Flow(ccm),CO2(ppm),pCO2(uatm),Equil T(C),SBE38 T(C),ID#, ID,lat,lon,cog(D),sog(knots),sst(C),salinity(psu),baro(hPa),wind speed(knots),wind dir(D)
+	
+------------------------------------------------------------------------------------------------
+rad_psp-pir:
+
+  Remote Measurements & Research PSP (Precision Spectral Pyranometer) and PIR (Precision Infrared Radiometer)
+
+  RAD 205 -
+    PSP Serial Number: 37669F3
+    PIR Serial Number: 37685F3
+
+  Location: top of science control room
+  Sample rate: 1 every 10 seconds
+
+  Example data line:
+    rad_psp-pir  2014-12-12T01:29:38.2952Z  $WIR20,14/12/12,01:46:30, 175, -418.5, 265.53, 26.31, 26.15, 278.59, 27.9, 10.8
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    ID [NMEA-style tag]
+    DATE TIME [yy/MM/dd,hh:mm:ss(Note: this time is not synced with external time server so do not use)]
+    # [the number of samples that went into the averages]
+    PIR [the average voltage from the PIR thermopile,millivolts]
+    LW [the computed longwave downwelling irradiance,Wm**2]
+    TCASE [the PIR case temperature,C]
+    TDOME [the PIR dome temperature,C]
+    SW [the computed shortwave downwelling irradiance,Wm**2]
+    T-AVR  [the computed shortwave downwelling irradiance,C]
+    BATT [the battery voltage after the input diode drop,volts]
+
+------------------------------------------------------------------------------------------------
+rad_qsr2150a:
+ 
+  Biospherical Instruments reference PAR sensor
+
+  Model: QSR2150
+  Serial Number: 50172
+  Location: top of science control room
+  Sample rate: 1 per second
+
+  ADC sample rate 125, gain 1
+  Averaging 125 readings                                                                           
+  Calfactor: 0.000624uE/m2 sec                                                                     
+  Calibration Mode = B, Output calibrated for use in air dividing net volts by 0.000624 with units of uE/m2 sec                       
+  Dark zero, currently dark = 0.010320v. 
+  temperature is enabled, line voltage is enabled
+
+  Example data line:
+    rad_qsr2150a  2014-12-12T02:02:20.7459Z  1914.525, 28.09, 7.536
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    PAR [uE/m2 sec]
+    Sensor Temperature [C]
+    Line voltage [volts]
+
+------------------------------------------------------------------------------------------------
+sb_echosounder_1:
+
+  Bridge navigation echo sounder, port console
+  Model: LAZ 5100
+  Sample rate: variable
+
+  Example data lines:
+    sb_echosounder_1  2014-11-19T02:52:42.7943Z  $SDDPT,0005.9,-0.0,0010*6B
+    sb_echosounder_1  2014-11-19T02:52:42.8741Z  $SDDBT,0019.3,f,0005.9,M,0003.2,F*30
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+   $--DPT,depth,offset,range*checksum
+      -Water depth relative to the transducer, meters
+      -Offset from transducer, meters
+      -Maximum range scale in use
+
+   $--DBT,depth,f,depth,M,depth,F*checksum
+      -Water depth below transducer, feet
+      -Water depth below transducer, Meters 
+      -Water depth below transducer, Fathoms
+
+------------------------------------------------------------------------------------------------
+sb_echosounder_2:
+
+  Bridge navigation echo sounder, chart table fiddle board
+  Model: LAZ 5100
+  Sample rate: variable
+
+  Example data lines:
+    sb_echosounder_2  2014-11-19T02:48:28.9308Z  $SDDPT,0005.7,-0.0,0010*65
+    sb_echosounder_2  2014-11-19T02:48:29.0106Z  $SDDBT,0018.6,f,0005.7,M,0003.1,F*39
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+   $--DPT,depth,offset,range*checksum
+      -Water depth relative to the transducer, meters
+      -Offset from transducer, meters
+      -Maximum range scale in use
+
+   $--DBT,depth,f,depth,M,depth,F*checksum
+      -Water depth below transducer, feet
+      -Water depth below transducer, Meters 
+      -Water depth below transducer, Fathoms
+
+------------------------------------------------------------------------------------------------
+speedlog:
+
+  Bridge navigation Doppler Speed Log
+
+  Sample rate: variable
+
+  Example data lines:
+    speedlog  2014-12-12T06:02:42.8523Z  $VDVLW,14566.6,N,4566.64,N*5A
+    speedlog  2014-12-12T06:02:43.7550Z  $VDVBW,5.5,0.2,A,,,V,,V,,V*44
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ASCII message
+
+  The following is a brief overview of the NMEA sentences currently being generated:
+
+   $--VLW,dist,N,dist,N,dist,N,dist,N*checksum
+      -Total cumulative water distance, nautical miles
+      -Water distance since reset, nautical miles
+      -Total cumulative ground distance, nautical miles 
+      -Ground distance since reset, nautical miles
+
+   $--VBW,speed,speed,status,speed,speed,status,speed,status,speed,status*checksum
+      -Longitudinal water speed, knots
+      -Transverse water speed, knots 
+      -Status: Water speed, A = Data valid
+      -Longitudinal ground speed, knots 
+      -Transverse ground speed , knots
+      -Status, Ground speed, A = Data valid 
+      -Stern transverse water speed, knots 
+      -Status, stern water speed, A = Data valid 
+      -Stern transverse ground speed , knots
+      -Status, stern ground speed A = Data valid V = Invalid 
+
+------------------------------------------------------------------------------------------------
+ssv_aml-svxchang_fwd:
+
+  AML Oceanographic SV•Xchange field swappable sound velocity sensor.
+  Measures speed of sound in surface seawater from forward seachest in bow thruster room.
+
+  Model: SV•Xchange Calibrated Sensor
+  Serial Number: 203299
+  Location: Bow thruster room. Water source forward seachest.
+  Sample rate: 1 every 5 seconds
+
+  Example data line:
+    ssv_aml-svxchang_fwd  2014-12-12T06:08:43.7092Z   1537.965
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Speed of Sound [m/s]
+
+------------------------------------------------------------------------------------------------
+thermo_pyrometer-ct15:
+
+  Heitronics infrared radiation pyrometer. Measures sea surface skin temperature.
+
+  Model: CT15.10
+  Serial Number: 10974
+  Location: Just forward of science control room
+  Sample rate: 1 per second
+
+  Example data line:
+    thermo_pyrometer-ct15  2014-12-12T06:26:14.2312Z   25.51 C
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Temperature [C]
+
+------------------------------------------------------------------------------------------------
+thermo_sbe38_fwd:
+  
+  Sea-Bird SBE 38 Temperature sensor.
+  Measures surface seawater temperature from forward seachest for the UNCSW system.
+
+  Model: SBE38
+  Serial Number: 3869615-0668
+  Location: Forward seachest in bow thruster room
+  Sample rate: 1 second
+
+  Example data line:
+    thermo_sbe38_fwd  2016-03-12T00:00:16.7036Z  16.7103
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Temperature [C]
+
+------------------------------------------------------------------------------------------------
+thermo_sbe38_incubator:
+  
+  Sea-Bird SBE 38 Temperature sensor.
+  Measures surface seawater temperature from forward seachest for the Incubator system.
+
+  Model: SBE38
+  Serial Number: 3865482-0647
+  Location: Forward seachest in bow thruster room
+  Sample rate: 1 second
+
+  Example data line:
+    thermo_sbe38_incubator  2015-10-26T00:00:13.6572Z   1.7084
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Temperature [C]
+
+------------------------------------------------------------------------------------------------
+tsg_emssv:
+
+  Log of the Kongsberg external datagrams(C+T format) sent to the Kongsberg MBES (EM302 and EM710).
+  These provide the real-time input for surface sound velocity needed by these sonars.
+
+  Sample rate: 1 every 5 seconds
+
+  Example data line:
+    tsg_emssv  2014-12-12T06:51:13.1575Z  $KSSIS,80,1537.39,26.44,
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Kongsberg external datagram(C+T format)*
+
+  * Note:
+   $KSSIS,80,c.c,t.t,\n\r
+   where
+   • $KSSIS specifies that this is a Kongsberg proprietary datagram format
+   • 80 is the datagram number indicating that this is an external soundspeed sample
+   • c.c is the sound speed at transducer represented as an ASCII text string e.g. 1537.39
+   • t.t is the temperature at transducer represented as an ASCII text string e.g. 26.44
+
+------------------------------------------------------------------------------------------------
+tsg_sbe45_fwd:
+
+  Sea-Bird SBE 45 MicroTSG Conductivity and Temperature Monitor.
+  Measures surface seawater temperature and conductivity from forward seachest.
+
+  Model: SBE 45 MicroTSG (Thermosalinograph)
+  Serial Number: 0385
+  Location: Main lab. Water source forward sea chest
+  Sample rate: 1 every 5 seconds
+
+  Example data line:
+    tsg_sbe45_fwd  2014-12-12T06:34:03.1647Z   26.4679,  5.44818,  34.9076, 1537.771
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Temperature [C]
+    Conductivity [S/m]
+    Salinity [psu]
+    Speed of Sound [m/s]
+
+------------------------------------------------------------------------------------------------
+tsg_sbe45_fwd_2:
+
+  Sea-Bird SBE 45 MicroTSG Conductivity and Temperature Monitor.
+  Measures surface seawater temperature and conductivity from forward seachest.
+
+  Model: SBE 45 MicroTSG (Thermosalinograph)
+  Serial Number: 0399
+  Location: Main lab. Water source forward sea chest
+  Sample rate: 1 every 5 seconds
+
+  Example data line:
+    tsg_sbe45_fwd2  2014-12-12T06:34:03.1647Z   26.4679,  5.44818,  34.9076, 1537.771
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Temperature [C]
+    Conductivity [S/m]
+    Salinity [psu]
+    Speed of Sound [m/s]
+
+------------------------------------------------------------------------------------------------
+winch_rapp:
+
+	Sikuliaq is equipped with a suite of electric winches manufactured by Rapp Marine,
+	consisting of two hydrographic winches with .322 EM cable and a traction winch with two
+	storage reels containing .681 EOM cable and 9/16 3x19 trawl wire. The PLC interfaces with
+	a databroker that outputs NMEA data at 20 Hz using ZeroMQ distributed messaging.
+	
+	Sample rate: 20 per second
+	
+	Example data line:
+	winch_rapp	2017-06-01T12:26:37.6783Z	@RCWD,2,3,103.64,0.42,-29.95,0,102.96,0.294791*3d
+
+	Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    ID [@RCWD]
+	Winch Number [1, 2, 6, 7] - see note below
+	Winch Mode [1=manual, 2=auto_payout, 3=auto_haulin]
+	Length [meters] - motor calculated
+	Tension [metric tons] - motor calculated
+	Velocity [meters per minute]
+	Alarm
+	Length [meters] - block counting
+	Tension [metric tons] - load cell
+    CheckSum
+	
+	Note: The ship's typical arrangement is to use Winch #1 for .322 ops off the stern A-frame
+		  and Winch #2 for .322 ops off the starboard Load Handling System for CTD casts.
+		  Winch #6 refers to Storage Drum 1 which houses the .681, and Winch #7 refers to
+		  Storage Drum 2 which houses the 9/16 trawl wire.
+
+------------------------------------------------------------------------------------------------
+wind_gill_fwdmast:
+
+  WindObserver 70/75 Ultrasonic Anemometer
+  Relative wind speed only.
+
+  Model: 1390-75-B-313
+  Serial Number: 1351006 - WC45
+  Location: Forward mast
+  Sample rate: 1 per second
+
+  Example data line:
+    wind_gill_fwdmast  2014-12-12T07:08:16.3849Z  A,356,006.00,M,60,0E
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    Unit ID
+    Wind direction [In degrees relative to bow of ship (DDD)]
+    Wind speed  [In increments of 0.01 units (+-MMM.MM)]
+    Units [M Metres per second (m/s)]
+    Status [0          : OK
+            60 or 66   : Heating enabled and OK if enabled
+            Any other value: Warning or fault condition ]
+    Checksum
+
+------------------------------------------------------------------------------------------------
+wind_gill_fwdmast_true:
+
+  WindObserver 70/75 Ultrasonic Anemometer
+  Computed true wind speed. Uses SeaPath 320+ for reference heading source.
+
+  Data format had been modified by LDS to use the NMEA standard for sentence 
+  MWD (Wind Direction & Speed).
+
+  Model: 1390-75-B-313
+  Serial Number: 1351006 - WC45
+  Location: Forward mast
+  Sample rate: 1 per second
+
+  Example data line:
+    wind_gill_fwdmast_true  2014-12-12T07:25:11.4542Z  $WIMWD,81.4,T,,M,6.9,N,3.6,M*43
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ID
+    Wind direction, 0 to 359 degrees,T[True]
+    Wind direction, 0 to 359 degrees,M[Magnetic]
+    Wind speed, N[knots]
+    Wind speed, M[meters/second]
+
+------------------------------------------------------------------------------------------------
+wind_mast_port:
+
+  R.M. Young Ultrasonic Anemometer (heated) 
+  Component of Ship's navigation instrumentation.
+  Relative wind speed only.
+
+  Model: 85004
+  Location: Main mast, port side
+  Sample rate: 4 per second
+
+  Example data line:
+    wind_mast_port  2015-08-19T00:25:29.5382Z       $WIMWV,296,R,06.1,N,A*07
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ID
+    Wind direction, 0 to 359 degrees,R
+    Wind speed,
+    Wind speed units[K/M/N/S],
+    Status [A = Data Valid, V = Data invalid]
+
+  Note: This sensor is not part of the pool of science maintained instrumentation.
+  
+------------------------------------------------------------------------------------------------
+wind_mast_port_true:
+
+  R.M. Young Ultrasonic Anemometer (heated)
+  Component of Ship's navigation instrumentation.
+
+  Data format had been modified by LDS to use the NMEA standard for sentence 
+  MWD (Wind Direction & Speed).
+
+  Model: 85004
+  Location: Main mast, port side
+  Sample rate: 4 per second
+
+  Example data line:
+    wind_mast_port_true     2015-08-19T00:06:17.4217Z       $WIMWD,60.4,T,,M,12.2,N,6.3,M*72
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ID
+    Wind direction, 0 to 359 degrees,T[True]
+    Wind direction, 0 to 359 degrees,M[Magnetic]
+    Wind speed, N[knots]
+    Wind speed, M[meters/second]
+
+  Note: This sensor is not part of the pool of science maintained instrumentation.
+
+------------------------------------------------------------------------------------------------
+wind_mast_stbd:
+
+  R.M. Young Ultrasonic Anemometer (heated)
+  Component of Ship's navigation instrumentation.
+  Relative wind speed only.
+
+  Model: 85004
+  Location: Main mast, starboard side
+  Sample rate: 4 per second
+
+  Example data line:
+    wind_mast_stbd  2015-08-19T00:01:45.7871Z       $WIMWV,286,R,06.0,N,A*07
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ID
+    Wind direction, 0 to 359 degrees,R
+    Wind speed,
+    Wind speed units[K/M/N/S],
+    Status [A = Data Valid, V = Data invalid]
+
+  Note: This sensor is not part of the pool of science maintained instrumentation.
+  
+------------------------------------------------------------------------------------------------
+wind_mast_stbd_true:
+
+  R.M. Young Ultrasonic Anemometer (heated)
+  Component of Ship's navigation instrumentation.
+
+  Data format had been modified by LDS to use the NMEA standard for sentence 
+  MWD (Wind Direction & Speed).
+
+  Model: 85004
+  Location: Main mast, starboard side
+  Sample rate: 4 per second
+
+  Example data line:
+    wind_mast_stbd_true     2015-08-19T00:04:01.8781Z       $WIMWD,72.7,T,,M,13.1,N,6.8,M*7B
+
+  Field Descriptions:
+    LDS Logger ID
+    LDS Time Stamp [UTC]
+    NMEA ID
+    Wind direction, 0 to 359 degrees,T[True]
+    Wind direction, 0 to 359 degrees,M[Magnetic]
+    Wind speed, N[knots]
+    Wind speed, M[meters/second]
+
+  Note: This sensor is not part of the pool of science maintained instrumentation.
+
