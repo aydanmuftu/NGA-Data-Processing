@@ -84,3 +84,23 @@ write.xlsx(chl, file = '_rdata/CHL.xlsx')
 temp = load.all('Data/POC/')
 poc = concat(temp)
 saveRDS(poc, file = '_rdata/POC.rdata')
+
+
+
+
+#### CTD Bottles
+
+temp = load.all('Data/CTD Bottle/')
+bottle = concat(temp)
+
+oxy.log = read.xlsx('../NGA-Projects/Data/Oxygen/NGA Oxygen Titration Log.xlsx', sheet = 2, startRow = 2)
+oxy.log$ctd = NA
+
+for (i in 1:nrow(oxy.log)) {
+  k = which(bottle$Cruise == oxy.log$Cruise[i] & bottle$Cast_Number == oxy.log$Cast[i] & bottle$Bottle_Number == oxy.log$Niskin[i])
+  
+  if (length(k) > 0) {
+    message('sdf')
+    oxy.log$ctd[i] = mean(bottle$Oxygen_.umol.kg.[k], na.rm = T)
+  }
+}
