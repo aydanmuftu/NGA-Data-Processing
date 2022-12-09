@@ -90,17 +90,22 @@ saveRDS(poc, file = '_rdata/POC.rdata')
 
 #### CTD Bottles
 
-temp = load.all('Data/CTD Bottle/')
-bottle = concat(temp)
-
 oxy.log = read.xlsx('../NGA-Projects/Data/Oxygen/NGA Oxygen Titration Log.xlsx', sheet = 2, startRow = 2)
 oxy.log$ctd = NA
+oxy.log$Niskin = as.numeric(oxy.log$Niskin)
 
 for (i in 1:nrow(oxy.log)) {
-  k = which(bottle$Cruise == oxy.log$Cruise[i] & bottle$Cast_Number == oxy.log$Cast[i] & bottle$Bottle_Number == oxy.log$Niskin[i])
+  k = which(bottle$Cruise == oxy.log$Cruise[i] & bottle$Cast == oxy.log$Cast[i] & bottle$Bottle == oxy.log$Niskin[i])
   
   if (length(k) > 0) {
-    message('sdf')
-    oxy.log$ctd[i] = mean(bottle$Oxygen_.umol.kg.[k], na.rm = T)
+    oxy.log$ctd[i] = mean(bottle$`Sbox0Mm/Kg`[k], na.rm = T)
   }
 }
+
+summary(oxy.log$ctd)
+
+
+plot(oxy.log$Approx.O2, (oxy.log$ctd - oxy.log$Approx.O2)/oxy.log$Approx.O2, xlim = c(0, 350), ylim = c(-0.1,0.1))
+grid()
+abline(a = 0, b = 1, col = 'grey')
+abline(0,0)
