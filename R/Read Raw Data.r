@@ -46,7 +46,7 @@ pos = data.frame(Cruise = pos$Cruise,
 
 summary(pos)
 
-saveRDS(pos, file = '_rdata/TSG.rdata')
+saveRDS(pos, file = '_rdata/TSG.rds')
 write.xlsx(pos, file = '_rdata/TSG.xlsx')
 
 
@@ -83,7 +83,7 @@ write.xlsx(chl, file = '_rdata/CHL.xlsx')
 ### Load POC
 temp = load.all('Data/POC/')
 poc = concat(temp)
-saveRDS(poc, file = '_rdata/POC.rdata')
+saveRDS(poc, file = '_rdata/POC.rds')
 
 
 
@@ -109,3 +109,14 @@ plot(oxy.log$Approx.O2, (oxy.log$ctd - oxy.log$Approx.O2)/oxy.log$Approx.O2, xli
 grid()
 abline(a = 0, b = 1, col = 'grey')
 abline(0,0)
+
+
+
+#### NPP 
+temp = load.all('Data/NPP/', pattern = '*.csv')
+npp = concat(temp)
+names(npp) = gsub('_', '', make.names(names(npp)))
+npp = npp[,order(names(npp))]
+
+saveRDS(npp, file = '_rdata/NPP.rds')
+write.xlsx(npp, 'Data/NPP/Combined NPP.xlsx')
