@@ -1,0 +1,9 @@
+parameter,type,units,appropriate_values
+cruise,text,NA,NA
+deployment.id,text,NA,NA
+station,text,NA,NA
+depth,integer,meter,0 - 1000
+deployment_datetime,text,UTC datetime stamp,NA
+recovery_datetime,text,UTC datetime stamp,NA
+chl_flux,integer,ug meter-2 d-1,0 - 100000
+phaeopigment_flux,integer,ug meter-2 d-1,0 - 100000
