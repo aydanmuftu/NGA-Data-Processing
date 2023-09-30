@@ -1,0 +1,123 @@
+---
+title: "NGA Oxygen Analysis"
+author: "Thomas Bryce Kelly"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+
+```
+
+## Sensor vs. Winkler Comparisons
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r comparison, echo=FALSE}
+par(mfrow = c(2,2))
+plot(o2$Oxygen,
+     o2$downcast1,
+     pch = 16,
+     xlab = 'Discrete Oxygen Concentration',
+     ylab = 'Primary Oxygen Sensor',
+     ylim = c(0,350),
+     xlim = c(0,350),
+     xaxs = 'i',
+     yaxs = 'i')
+abline(a = 0, b = 1, col = 'darkgrey', lwd = 2)
+grid(); box()
+
+plot(o2$Oxygen,
+     o2$downcast2,
+     pch = 16,
+     xlab = 'Discrete Oxygen Concentration',
+     ylab = 'Secondary Oxygen Sensor',
+     ylim = c(0,350),
+     xlim = c(0,350),
+     xaxs = 'i',
+     yaxs = 'i')
+abline(a = 0, b = 1)
+grid(); box()
+
+
+plot(o2$Oxygen,
+     o2$downcast1 - o2$Oxygen,
+     pch = 16,
+     xlab = 'Discrete Oxygen Concentration',
+     ylab = 'Primary Oxygen Difference',
+     xlim = c(0,350),
+     xaxs = 'i')
+abline(h = 0)
+grid(); box()
+
+plot(o2$Oxygen,
+     o2$downcast2 - o2$Oxygen,
+     pch = 16,
+     xlab = 'Discrete Oxygen Concentration',
+     ylab = 'Secondary Oxygen Difference',
+     xlim = c(0,350),
+     xaxs = 'i')
+abline(h = 0)
+grid(); box()
+```
+
+### Cruise-by-Cruise
+
+While the above compares the oxyen sensor values to discrete Winkler titrations across the entire dataset, the more important comparison is performed on a cruise-by-cruise basis. Here, the sensor values and discrete titration values are plotted for each cruise individually.
+
+``` {r cruise-by-cruise, echo=FALSE}
+par(mfrow = c(1,2))
+
+tmp = o2[!is.na(o2$downcast1),]
+for (cruise in unique(tmp$Cruise)) {
+  k = tmp$Cruise == cruise
+  plot(tmp$Oxygen[k],
+       tmp$downcast1[k],
+       pch = 16,
+       xlab = 'Discrete Oxygen Concentration',
+       ylab = 'Primary Oxygen Sensor',
+       main = cruise,
+       ylim = c(0,350),
+       xlim = c(0,350),
+       xaxs = 'i',
+       yaxs = 'i')
+  abline(a = 0, b = 1, col = 'darkgrey', lwd = 2)
+  grid(); box()
+  
+  plot(tmp$Oxygen[k],
+       tmp$downcast2[k] - tmp$Oxygen[k],
+       pch = 16,
+       xlab = 'Discrete Oxygen Concentration',
+       ylab = 'Secondary Oxygen Difference',
+       xlim = c(0,350),
+       xaxs = 'i')
+  abline(h = 0)
+  grid(); box()
+  
+}
+
+```
+
+
+### Primary-vs-Secondary
+
+Deviations between the two oxygen sensors (when available) should be thoroughly inspected to identify which sensor is more consistent with discrete measurements and/or climatology of oxygen concentrations at that location.
+
+``` {r, primary-vs-secondary, echo=FALSE}
+
+plot(o2$downcast1, o2$downcast2,
+     pch = 16,
+     ylim = c(0,350),
+     xlim = c(0,350),
+     xaxs = 'i',
+     yaxs = 'i')
+abline(a = 0, b = 1, col = 'darkgrey', lwd = 2)
+grid(); box()
+
+```
+
