@@ -1,0 +1,54 @@
+This data was collected by Dr. Tom Weingartner of the Institute of Marine Science, University of Alaska Fairbanks for the Gulf of Alaska LTOP (Long Term Observation Project) funded by the North Pacific Research Board, grant #520. The area of coverage is the Gulf of Alaska during May, 2005. 
+
+This data is divided into 2 parts: Header information is stored in tn179hdr.dat and the CTD data is stored in tn179s.dat. Both files are contained within the WinZip archive named TN179_CTD.zip. Both files are self-documented with descriptions of each column's data.                                               
+
+Data was collected on board the R/V Thomas G. Thompson by a Seabird 911 Plus CTD sampling at 24 frames per second with 2 conductivity sensors and 2 temperature sensors.  Sensors are factory calibrated once per year. 
+                                                  
+CTD Pressure, Temperature and Salinity data is processed according to Seabird Inc recommended procedures. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions.  Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T & S data only:                        
+   0 = Good Data, 
+   1 = Extrapolated, 
+   2 = Interpolated, 
+   3 = Poor Data Quality For Other Reason        
+                                                                                     
+Data units are decibars for Pressure, degrees Celcius for Termperature and Salinity is reported in terms of Practical Salinity Units (PSU), which are dimensionless. Ancillary data are reported as voltages (full range 0-5 volts) and/or as converted to engineering units described at the top of the data file and have not been subjected to any quality control measures.       
+
+This cruise was the second leg of cruise TN179 and thus was also referred to as TN179B. The CTD data collected was assigned station numbers by the ship's data acqisition computer that did not conform to our standard numbering procedure.  The CTD data consecutive station numbers were therefore translated according to the following table and should be used to match with other references to this CTD data:
+
+R/V      UAF
+THOMPSON CONSECUTIVE
+STATION  STATION
+NUMBER   NUMBER
+======== ===========
+ 06101   1
+ 06201   2
+ 06202   3
+ 06301   4
+ 06401   5
+ 06501   6
+ 06601   7
+ 06701   8
+ 06801   9
+ 06802   10
+ 06901   11
+ 07001   12
+ 07101   13
+ 07201   14
+ 07301   15
+ 07401   16
+ 07501   17
+ 07601   18
+ 07701   19
+ 07801   20
+ 07802   21
+ 07901   22
+ 08001   23
+ 08101   24
+ 08201   25
+ 08301   26
+ 08302   27
+ 08401   28
+ 08402   29
+ 08501   30
+ 08601   31
+ 08602   32
+ 08701   33

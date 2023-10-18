@@ -1,0 +1,111 @@
+% TXS11 Header Data
+% Columns:
+% 1. Consecutive Station Number
+% 2. Station Name
+% 3. Date/Time
+% 4. Latitude
+% 5. Longitude
+% 6. Bottom Depth
+% 7. Original Data File Name
+% 8. Instrument
+% 9. Vessel
+%10. Cruise
+%11. Principal Investigator
+%12. Project
+%13. Funding Agency
+%14. Area,
+%15. Restrictions
+1, GP1,  Apr 25 2011 15:24:39,59.14933,-151.0083, NaN, TxS11-001.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+2, GP2,  Apr 25 2011 16:36:22,59.10017,-150.9972, NaN, TxS11-002.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+3, GP3,  Apr 25 2011 18:42:04,58.95817,-150.9182, NaN, TxS11-003.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+4, GP4,  Apr 25 2011 19:54:21,58.82767,-150.8835, NaN, TxS11-004.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+5, GP5,  Apr 25 2011 21:44:15,58.74866,-150.8648, NaN, TxS11-005.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+6, GP7,  Apr 25 2011 23:34:25,58.54617,-150.7773, NaN, TxS11-006.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+7, AP6,  Apr 26 2011 00:29:05,58.48133,-150.7565, NaN, TxS11-007.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+8, AP5,  Apr 26 2011 01:25:08,58.4695,-150.9432, NaN, TxS11-008.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+9, AP4,  Apr 26 2011 02:22:29,58.45433,-151.1517, NaN, TxS11-009.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+10, AP3,  Apr 26 2011 04:43:01,58.44217,-151.3382, NaN, TxS11-010.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+11, AP2,  Apr 26 2011 05:37:51,58.42916,-151.5323, NaN, TxS11-011.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+12, AP1,  Apr 27 2011  06:34:22,58.4142,-151.7227, NaN, TxS11-012.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+13, SE5,  Apr 27 2011  09:41:19,58.6592,-152.4155, NaN, TxS11-013.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+14, SE4,  Apr 27 2011  10:14:42,58.7027,-152.3887, NaN, TxS11-014.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+15, SE3,  Apr 27 2011  10:55:16,58.7443,-152.3785, NaN, TxS11-015.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+16, SE1,  Apr 27 2011  11:49:09,58.8272,-152.3467, NaN, TxS11-016.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+17, KE7,  Apr 27 2011  13:17:46,58.9828,-152.2965, NaN, TxS11-017.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+18, KE4,  Apr 27 2011  14:33:14,59.1103,-152.1613, NaN, TxS11-018.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+19, KE1,  Apr 27 2011  15:41:37,59.2323,-152.034, NaN, TxS11-019.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+20, 11CBP-3A,  Apr 28 2011 06:06:17,57.5127,-151.4593, NaN, TxS11-020.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+21, HL181,  Apr 28 2011 14:09:24,57.04517,-152.8903, NaN, HL181bongo01BA.cnv, SBE19+, R/V Tiglax, TXS11B, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+22, HP181,  Apr 29 2011 20:54:18,56.8153,-152.4637, NaN, TxS11-022.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+23, HT181,  Apr 29 2011  23:24:52,56.5813,-152.0142, NaN, TxS11-023.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+24, HX181,  Apr 30 2011  03:09:40,56.3463,-151.6152, NaN, TxS11-024.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+25, HX185,  Apr 30 2011  05:47:14,56.592,-151.1952, NaN, TxS11-025.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+26, HT185,  Apr 30 2011  09:40:43,56.8273,-151.6145, NaN, TxS11-026.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+27, HP185,  Apr 30 2011  12:16:06,57.0547,-152.0197, NaN, TxS11-027.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+28, HL185,  Apr 30 2011  15:48:07,57.2937,-152.4665, NaN, TxS11-028.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+29, HL189,  Apr 30 2011  18:14:54,57.5315,-152.0372, NaN, TxS11-029.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+30, HP189,  Apr 30 2011  21:36:59,57.3037,-151.6098, NaN, TxS11-030.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+31, HT189,  Apr 30 2011  23:57:13,57.0748,-151.19, NaN, TxS11-031.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+32, HX189,  May 01 2011  03:48:24,56.8395,-150.7722, NaN, TxS11-032.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+33, HX193,  May 01 2011  06:31:03,57.0747,-150.3568, NaN, TxS11-033.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+34, HT193,  May 01 2011  10:27:22,57.3132,-150.7585, NaN, TxS11-034.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+35, HP193,  May 01 2011 12:54:26,57.5365,-151.169, NaN, TxS11-035.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+36, HL193,  May 01 2011  16:28:59,57.773,-151.6103, NaN, TxS11-036.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+37, HH193,  May 02 2011  01:37:42,57.9995,-152.0233, NaN, TxS11-037.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+38, HD197,  May 02 2011  06:11:11,58.4768,-152.0082, NaN, TxS11-038.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+39, HH197,  May 02 2011  08:43:11,58.2458,-151.5908, NaN, TxS11-039.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+40, HL197,  May 02 2011  11:52:01,58.0217,-151.1817, NaN, TxS11-040.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+41, HP197,  May 02 2011  14:00:14,57.7857,-150.7567, NaN, TxS11-041.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+42, HT197,  May 02 2011  17:49:47,57.5583,-150.338, NaN, TxS11-042.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+43, HX197,  May 02 2011  20:07:36,57.32,-149.922, NaN, TxS11-043.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+44, HX201,  May 03 2011  00:41:04,57.5647,-149.5052, NaN, TxS11-044.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+45, HX201,  May 03 2011  01:21:45,57.5643,-149.5272, NaN, TxS11-045.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+46, HT201,  May 03 2011  03:34:17,57.7943,-149.9135, NaN, TxS11-046.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+47, HP201,  May 03 2011  07:14:37,58.0313,-150.3442, NaN, TxS11-047.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+48, HL201,  May 03 2011  09:20:02,58.2557,-150.7375, NaN, TxS11-048.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+49, HH201,  May 03 2011  12:25:06,58.4818,-151.1437, NaN, TxS11-049.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+50, HD201,  May 03 2011  14:49:11,58.7153,-151.5632, NaN, TxS11-050.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+51, HD205,  May 03 2011  18:31:08,58.9587,-151.1187, NaN, TxS11-051.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+52, HH205,  May 03 2011  20:57:55,58.7303,-150.7128, NaN, TxS11-052.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+53, HL205,  May 04 2011  00:44:06,58.4998,-150.2828, NaN, TxS11-053.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+54, HP205,  May 04 2011  02:57:22,58.2687,-149.8952, NaN, TxS11-054.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+55, HP205,  May 04 2011  03:14:17,58.267,-149.8978, NaN, TxS11-055.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+56, HT205,  May 04 2011 06:30:26,58.0372,-149.4983, NaN, TxS11-056.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+57, HX205,  May 04 2011 09:01:14,57.801,-149.0922, NaN, TxS11-057.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+58, HX209,  May 04 2011  13:22:58,58.0363,-148.6628, NaN, TxS11-058.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+59, HT209,  May 04 2011  15:57:07,58.2725,-149.0595, NaN, TxS11-059.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+60, HP209,  May 04 2011  19:42:38,58.5057,-149.4652, NaN, TxS11-060.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+61, HL209,  May 04 2011  21:49:24,58.7398,-149.865, NaN, TxS11-061.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+62, HH209,  May 05 2011  01:29:02,58.971,-150.2722, NaN, TxS11-062.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+63, HD209,  May 05 2011  03:49:17,59.1978,-150.6728, NaN, TxS11-063.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+64, HH209,  May 05 2011  08:01:46,59.429,-150.2372, NaN, TxS11-064.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+65, HH213,  May 05 2011  10:13:03,59.216,-149.8252, NaN, TxS11-065.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+66, HL213,  May 05 2011  14:04:49,58.9715,-149.4072, NaN, TxS11-066.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+67, HP213,  May 05 2011  16:09:58,58.7605,-148.9977, NaN, TxS11-067.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+68, HT213,  May 05 2011  19:37:46,58.5297,-148.5952, NaN, TxS11-068.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+69, HX213,  May 05 2011  22:01:13,58.2995,-148.1822, NaN, TxS11-069.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+70, GAK11,  May 06 2011  00:53:24,58.3895,-148.069, NaN, TxS11-070.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+71, GAK12,  May 06 2011  03:10:36,58.2407,-147.9318, NaN, TxS11-071.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+72, GAK13,  May 06 2011  05:37:02,58.1022,-147.7818, NaN, TxS11-072.cnv, SBE9, R/V Tiglax, TXS11, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+85, GAK1,  May 07 2011  12:28:32,59.843,-149.464, NaN, TxS11-085.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+86, GAK2,  May 07 2011  14:04:44,59.6895,-149.3278, NaN, TxS11-086.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+87, GAK3,  May 07 2011  15:30:32,59.5538,-149.1903, NaN, TxS11-087.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+88, GAK4,  May 07 2011  16:53:51,59.4077,-149.0483, NaN, TxS11-088.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+89, GAK5,  May 07 2011  18:20:17,59.26,-148.9128, NaN, TxS11-089.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+90, GAK6,  May 07 2011  19:45:01,59.1178,-148.7657, NaN, TxS11-090.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+91, GAK7,  May 07 2011  21:07:17,58.9748,-148.6342, NaN, TxS11-091.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+92, GAK8,  May 07 2011 22:53:24,58.7942,-148.4882, NaN, TxS11-092.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+93, GAK9,  May 08 2011  00:18:26,58.68,-148.3498, NaN, TxS11-093.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+94, GAK10,  May 08 2011  02:35:54,58.5435,-148.2078, NaN, TxS11-094.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+95, KIP2,  May 08 2011  14:20:46,60.2775,-147.99, NaN, TxS11-095.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+96, PWS1,  May 08 2011  15:34:46,60.3733,-147.9427, NaN, TxS11-096.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+97, PWS2,  May 08 2011  17:14:07,60.5343,-147.805, NaN, TxS11-097.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+98, PWS3,  May 08 2011  18:37:21,60.6557,-147.6702, NaN, TxS11-098.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+99, HB1,  May 08 2011  22:25:17,60.1933,-147.7023, NaN, TxS11-099.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+100, HB2,  May 08 2011  23:12:10,60.18,-147.642, NaN, TxS11-100.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+101, HB3,  May 08 2011  23:48:42,60.1638,-147.5747, NaN, TxS11-101.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+102, HB4,  May 09 2011  00:22:09,60.1462,-147.501, NaN, TxS11-102.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+103, MS4,  May 09 2011  02:22:21,59.9228,-147.8258, NaN, TxS11-103.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+104, MS3,  May 09 2011  02:58:39,59.933,-147.8537, NaN, TxS11-104.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+105, MS2,  May 09 2011  03:31:02,59.9443,-147.8972, NaN, TxS11-105.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+106, MS1,  May 09 2011  04:03:07,59.955,-147.9287, NaN, TxS11-106.cnv, SBE19+, R/V Tiglax, TXS11C, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n

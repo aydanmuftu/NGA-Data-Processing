@@ -1,0 +1,48 @@
+% Columns:
+% 1. Instrument
+% 2. Date
+% 3. Latitude
+% 4. Longitude
+% 5. GMT
+% 6. Vessel
+% 7. Cruise
+% 8. Station Name
+% 9. Consecutive Station Number
+% 10. Station Bottom Depth
+% 11. Principal Investigator
+% 12. Project
+% 13. Funding Agency
+% 14. Geographic Region
+SBE911+,  May 02 2008, 60.0192, -149.3558,   07:28:12, TX, TXS08, RES2.5, 001, 295,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 60.0192, -149.3558,   06:10:52, TX, TXS08, RES2.5, 002, 295,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.8458, -149.4607,   08:20:57, TX, TXS08, GAK1,   003, 270,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.7667, -149.3950,   10:00:54, TX, TXS08, GAK1I,  004, 259,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.7642, -149.4045,   10:28:34, TX, TXS08, GAK1I,  005, 259,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.7642, -149.4045,   10:56:01, TX, TXS08, GAK1I,  006, 259,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.7642, -149.4045,   11:21:23, TX, TXS08, GAK1I,  007, 259,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.8517, -149.4690,   22:01:07, TX, TXS08, GAK1,   008, 270,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 04 2008, 59.6932, -149.3232,   23:44:21, TX, TXS08, GAK2,   009, 225,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 05 2008, 59.6234, -149.2578,   00:47:23, TX, TXS08, GAK2I,  010, 212,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 05 2008, 59.5483, -149.1952,   02:02:38, TX, TXS08, GAK3,   011, 216,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 05 2008, 59.4802, -149.1192,   02:53:07, TX, TXS08, GAK3I,  012, 215,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 05 2008, 59.4090, -149.0488,   03:46:12, TX, TXS08, GAK4,   013, 202,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 05 2008, 59.4135, -149.0895,   04:48:01, TX, TXS08, GAK4,   014, 202,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 05 2008, 59.3370, -148.9802,   06:43:59, TX, TXS08, GAK4,   015, 198,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 59.3352, -148.9760,   03:31:20, TX, TXS08, GAK4I,  018, 187,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 59.2638, -148.9063,   04:24:26, TX, TXS08, GAK5,   019, 158,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 59.1917, -148.8350,   05:40:16, TX, TXS08, GAK5I,  020, 168,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 59.1180, -148.7693,   06:28:41, TX, TXS08, GAK6,   021, 152,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 59.0468, -148.7003,   07:31:20, TX, TXS08, GAK6I,  022, 190,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 58.9722, -148.6283,   08:22:47, TX, TXS08, GAK7,   023, 243,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 58.8810, -148.5577,   09:31:21, TX, TXS08, GAK7I,  024, 300,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 58.7920, -148.4887,   10:27:35, TX, TXS08, GAK8,   025, 291,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 58.7420, -148.4178,   11:20:34, TX, TXS08, GAK8I,  026, 289,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 06 2008, 58.6792, -148.3480,   12:15:49, TX, TXS08, GAK9,   027, 278,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.2797, -147.9832,   00:49:29, TX, TXS08, KIP2,   028, 589,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.2793, -147.9842,   01:50:54, TX, TXS08, KIP2,   029, 589,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.2793, -147.9842,   02:28:06, TX, TXS08, KIP2,   030, 589,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.2793, -147.9842,   02:51:13, TX, TXS08, KIP2,   031, 589,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.2793, -147.9842,   03:13:41, TX, TXS08, KIP2,   032, 589,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.3803, -147.9408,   04:17:29, TX, TXS08, PWS1,   033, 349,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.5347, -147.8015,   05:55:12, TX, TXS08, PWS2,   034, 739,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 
+SBE911+,  May 07 2008, 60.5393, -147.8090,   06:46:52, TX, TXS08, PWS2,   035, 739,  Weingartner,  LTOP,  NPRB,  Gulf of Alaska 

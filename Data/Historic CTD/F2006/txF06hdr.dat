@@ -1,0 +1,59 @@
+% Columns:
+% 1. Instrument
+% 2. Date
+% 3. Latitude
+% 4. Longitude
+% 5. GMT
+% 6. Vessel
+% 7. Cruise
+% 8. Station Name
+% 9. Consecutive Station Number
+% 10. Station Bottom Depth
+% 11. Principal Investigator
+% 12. Project
+% 13. Funding Agency
+% 14. Geographic Region
+SBE25,Sep 14 2006,59.84566,-149.4675,16:20:05,TX,TXF06,GAK1,1,272,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,59.848,-149.4682,17:00:58,TX,TXF06,GAK1,2,272,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,59.84767,-149.4663,17:42:05,TX,TXF06,GAK1,4,272,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,59.76367,-149.4,19:21:04,TX,TXF06,GAK1i,5,262,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,59.68933,-149.3293,20:15:36,TX,TXF06,GAK2,6,230,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,59.6275,-149.2608,21:21:30,TX,TXF06,GAK2i,7,213,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 15 2006,60.53467,-147.7992,16:27:56,TX,TXF06,PWS2,8,730,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 15 2006,60.38,-147.9343,18:08:12,TX,TXF06,PWS1,9,345,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 15 2006,60.278,-147.9892,19:09:09,TX,TXF06,KIP2,10,557,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 15 2006,60.2775,-147.989,19:56:30,TX,TXF06,KIP2,11,557,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 15 2006,60.194,-147.699,22:09:51,TX,TXF06,HB1,12,248,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 15 2006,60.1745,-147.658,23:13:56,TX,TXF06,HB2,14,224,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 16 2006,60.148,-147.5017,0:14:16,TX,TXF06,HB4,16,105,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 16 2006,59.95016,-147.9343,2:25:42,TX,TXF06,MS1,17,165,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 16 2006,59.94933,-147.9343,2:45:42,TX,TXF06,MS1,18,165,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 16 2006,59.94316,-147.8998,3:03:14,TX,TXF06,MS2,19,186,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 16 2006,59.9325,-147.8602,3:38:14,TX,TXF06,MS3,20,173,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 16 2006,59.92083,-147.8282,3:59:58,TX,TXF06,MS4,21,115,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 17 2006,58.682,-148.3497,16:41:46,TX,TXF06,GAK9,22,280,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 17 2006,58.61117,-148.2792,18:15:23,TX,TXF06,GAK9i,23,675,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 17 2006,58.54067,-148.2102,19:15:44,TX,TXF06,GAK10,24,1080,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 17 2006,58.38683,-148.0715,21:03:44,TX,TXF06,GAK11,25,1432,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 17 2006,58.2345,-147.9228,23:04:37,TX,TXF06,GAK12,26,2226,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.1,-147.7918,0:48:58,TX,TXF06,GAK13,27,2095,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.74233,-148.422,15:25:20,TX,TXF06,GAK8i,28,289,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.6795,-148.3493,16:10:44,TX,TXF06,GAK9,29,277,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.677,-148.3602,16:41:30,TX,TXF06,GAK9,30,277,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.67667,-148.3697,17:02:42,TX,TXF06,GAK9,31,277,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.79117,-148.4913,17:59:31,TX,TXF06,GAK8,32,290,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.88233,-148.563,19:00:37,TX,TXF06,GAK7i,33,300,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,58.976,-148.636,20:08:20,TX,TXF06,GAK7,34,242,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,59.0455,-148.7012,20:52:05,TX,TXF06,GAK6i,35,192,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,59.117,-148.7712,21:34:33,TX,TXF06,GAK6,36,151,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,59.19117,-148.8397,22:39:29,TX,TXF06,GAK5i,38,168,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 18 2006,59.2625,-148.908,23:23:49,TX,TXF06,GAK5,39,167,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.33617,-148.9783,0:22:21,TX,TXF06,GAK4i,40,195,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.409,-149.0487,1:06:17,TX,TXF06,GAK4,41,199,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.482,-149.117,2:10:11,TX,TXF06,GAK3i,42,203,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.55383,-149.1917,2:56:51,TX,TXF06,GAK3,43,212,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.62533,-149.263,4:14:45,TX,TXF06,GAK2i,44,213,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.69133,-149.3298,4:52:59,TX,TXF06,GAK2,45,228,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 19 2006,59.846,-149.4668,6:11:42,TX,TXF06,GAK1,46,270,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,59.69183,-149.3247,20:06:57,TX,TXF06,GAK2,48,230,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 
+SBE25,Sep 14 2006,60.0202,-149.359,13:24:00,TX,TXF06,RES2.5,50,295,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska 

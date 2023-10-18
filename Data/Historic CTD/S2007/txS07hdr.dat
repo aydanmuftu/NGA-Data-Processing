@@ -1,0 +1,70 @@
+% Columns:
+% 1. Instrument
+% 2. Date
+% 3. Latitude
+% 4. Longitude
+% 5. GMT
+% 6. Vessel
+% 7. Cruise
+% 8. Station Name
+% 9. Consecutive Station Number
+% 10. Station Bottom Depth
+% 11. Principal Investigator
+% 12. Project
+% 13. Funding Agency
+% 14. Geographic Region
+SBE911+, May 07 2007,60.0193,-149.3523, 21:05:40 ,TX,TXS07,RES2.5,001,295, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 07 2007,58.0972,-147.7918, 17:45:23,TX,TXS07,GAK13,002,2095, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 07 2007,58.0972,-147.793, 18:36:53,TX,TXS07,GAK13,003,2095, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 07 2007,58.099,-147.8185, 20:28:47,TX,TXS07,GAK13,004,2095, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 07 2007,58.0992,-147.7897, 20:57:23,TX,TXS07,GAK13,005,2095, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.0963,-147.778, 01:00:09,TX,TXS07,GAK13,006,2095, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.0975,-147.7927, 01:54:03,TX,TXS07,GAK13,007,2095, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.242,-147.9327, 03:12:48,TX,TXS07,GAK12,008,2226, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.2438,-147.932, 05:13:55,TX,TXS07,GAK12,009,2226, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.7913,-148.4897, 15:32:21,TX,TXS07,GAK8,010,293, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.7437,-148.4205, 16:39:57,TX,TXS07,GAK8I,011,290, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.68,-148.351, 17:32:05,TX,TXS07,GAK9,012,278, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.6805,-148.3492, 18:35:21,TX,TXS07,GAK9,013,278, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.677,-148.338, 19:14:14 ,TX,TXS07,GAK9,014,278, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.6753,-148.3308, 19:36:12,TX,TXS07,GAK9,015,278, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.6117,-148.2785, 20:35:41,TX,TXS07,GAK9I,016,684, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.5418,-148.2107, 21:41:19,TX,TXS07,GAK10,017,1475, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 08 2007,58.388,-148.0687, 23:56:45,TX,TXS07,GAK11,018,1432, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,58.3885,-148.0623, 01:09:35,TX,TXS07,GAK11,019,1432, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.5538,-149.1923, 15:23:42,TX,TXS07,GAK3,020,214, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.483,-149.122, 16:30:26,TX,TXS07,GAK3I,021,204, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.4087,-149.0498, 17:19:29,TX,TXS07,GAK4,022,202, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.4097,-149.0547, 17:57:36,TX,TXS07,GAK4,023,202, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.4112,-149.0562, 18:39:13,TX,TXS07,GAK4,024,202, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.4117,-149.059, 19:10:52,TX,TXS07,GAK4,025,202, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.3333,-148.9812, 19:51:28,TX,TXS07,GAK4I,026,197, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.262,-148.9067, 20:43:00,TX,TXS07,GAK5,027,168, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.2635,-148.9078, 20:58:37,TX,TXS07,GAK5,028,168, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.1903,-148.8378, 22:00:19,TX,TXS07,GAK5I,029,172, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 09 2007,59.1165,-148.771, 22:48:59,TX,TXS07,GAK6,030,143, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.0458,-148.7045, 00:00:16,TX,TXS07,GAK6I,031,191, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.046,-148.7222, 00:22:45,TX,TXS07,GAK6I,032,191, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,58.973,-148.6288, 01:12:16 ,TX,TXS07,GAK7,033,243, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,58.8835,-148.5587, 02:29:19,TX,TXS07,GAK7I,034,300, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.6267,-149.2577, 15:18:06,TX,TXS07,GAK2I,035,213, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.6907,-149.3263, 16:01:39,TX,TXS07,GAK2,036,232, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.7667,-149.3965, 17:11:19 ,TX,TXS07,GAK1I,037,258, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.8455,-149.468, 18:02:38,TX,TXS07,GAK1,038,269, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.845,-149.4693, 18:44:08,TX,TXS07,GAK1,039,269, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.8442,-149.4747, 19:26:34,TX,TXS07,GAK1,040,269, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 10 2007,59.8445,-149.4775, 19:51:47,TX,TXS07,GAK1,041,269, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,59.9215,-147.828, 01:13:35,TX,TXS07,MS4,042,120, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,59.9322,-147.8545, 01:46:01,TX,TXS07,MS3,043,165, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,59.945,-147.8958, 02:27:54,TX,TXS07,MS2,044,192, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,59.9538,-147.9298, 02:50:28,TX,TXS07,MS1,045,165, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.192,-147.6982, 04:47:42,TX,TXS07,HB1,046,243, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.1792,-147.6412, 05:16:27,TX,TXS07,HB2,047,176, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.163,-147.5748, 05:56:48,TX,TXS07,HB3,048,85, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.1472,-147.5015, 06:23:19,TX,TXS07,HB4,049,107, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.5353,-147.8057, 15:25:41,TX,TXS07,PWS2,050,739, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.3767,-147.9375, 17:20:51,TX,TXS07,PWS1,051,288, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.2795,-147.9853, 19:00:05,TX,TXS07,KIP2,052,568, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.277,-147.9888, 20:01:14,TX,TXS07,KIP2,053,568, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.2753,-147.9912, 20:42:11,TX,TXS07,KIP2,054,568, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 11 2007,60.2785,-147.9847, 21:00:33,TX,TXS07,KIP2,055,568, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 

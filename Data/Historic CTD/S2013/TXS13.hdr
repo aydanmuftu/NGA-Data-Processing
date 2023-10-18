@@ -1,0 +1,85 @@
+1, RES2.5, 2013-04-26 08:00:46,60.014,-149.3577,297, res25.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+2, GAK1, 2013-04-26 10:48:06,59.83233,-149.4663,275, Gak1-start.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+3, HX181,  Apr 27 2013  12:36:33,56.3422,-151.6273, NaN, hx181.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+4, HT181,  Apr 27 2013  18:44:10,56.588,-152.0902,87, HT181.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+5, HT181,  Apr 27 2013  19:14:00,56.5895,-152.0918,85, HT181-repeat.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+6, HP181,  Apr 27 2013  21:34:15,56.814,-152.4682,181, HP181.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+7, HL181,  Apr 28 2013  02:09:17,57.0453,-152.9053,83, HL181.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+8, HL181,  Apr 28 2013  03:40:52,57.0468,-152.8913,88, HL181-real.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+9, HL185,  Apr 28 2013  06:24:55,57.2945,-152.465,81, HL185.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+10, HP185,  Apr 28 2013  12:58:06,57.0652,-152.0337,73, HP185.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+11, HT185,  Apr 28 2013  15:18:59,56.8273,-151.6182,511, HT185.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+13, HX185FE,  Apr 28 2013  21:45:58,56.5962,-151.1908, NaN, HX185.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+14, HX185FE,  Apr 29 2013  00:57:55,56.8333,-150.7842, NaN, HX189.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+15, HT189,  Apr 29 2013  05:31:04,57.0885,-151.1808,391, HT189.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+16, HP189,  Apr 29 2013  08:01:15,57.3002,-151.5978,72, HP189.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+17, HL189,  Apr 29 2013  11:10:06,57.5377,-152.0372,68, HL189.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+18, HH193,  Apr 29 2013  14:21:03,58.0007,-152.0247,172, HH193.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+19, HL193,  Apr 29 2013  18:01:02,57.7662,-151.6275,47, HL193.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+20, HP193,  Apr 30 2013  05:53:34,57.5458,-151.185,73, HP193.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+21, HT193,  Apr 30 2013  09:41:33,57.306,-150.7942,146, HT193.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+22, HX193,  Apr 30 2013  12:01:44,57.0852,-150.3615, NaN, HX193.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+23, HX197,  Apr 30 2013  16:18:31,57.3152,-149.9612, NaN, HX197.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+24, HX197-IRON,  Apr 30 2013  17:11:31,57.3132,-150.0207, NaN, HX197-iron.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+25, HT197,  Apr 30 2013  19:34:26,57.5545,-150.3387,182, HT197.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+26, HT197-IRON,  Apr 30 2013  20:12:45,57.534,-150.3533,182, HT197-iron.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+27, HP197,  May 01 2013  00:39:18,57.7773,-150.7913,82, HP197-iron.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+28, HL197,  May 01 2013  02:41:00,58.0125,-151.1785,80, HL197.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+29, HL197FE,  May 01 2013  03:20:52,58.0195,-151.1802,80, HL197Fe.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+30, HH197,  May 01 2013  08:14:04,58.243,-151.5913,69, HH197.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+31, HD197,  May 01 2013  10:30:05,58.4752,-152.0037,102, HD197.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+32, HX209,  May 02 2013  09:32:01,58.0622,-148.6752,660, HX209.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+33, HT209,  May 02 2013  11:57:39,58.2677,-149.0538,124, HT209.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+34, HP209,  May 02 2013  15:28:33,58.4907,-149.4812,138, HP209.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+35, HL209,  May 02 2013  18:16:17,58.7393,-149.8625,179, HL209.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+36, HH209,  May 02 2013  22:05:27,58.9493,-150.276,169, HH209.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+37, HD209,  May 03 2013  00:32:21,59.1925,-150.6777,136, HD209.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+38, HD213,  May 03 2013  04:01:33,59.4172,-150.2462,100, HD213.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+39, HH213,  May 03 2013  06:29:53,59.2165,-149.8298,180, HH213.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+40, HL213,  May 03 2013  10:14:41,58.9633,-149.4385,240, HL213.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+41, HP213,  May 03 2013  12:50:11,58.764,-149.0073,214, HP213.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+42, HT213,  May 03 2013  16:19:42,58.5203,-148.6018,122, HT213.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+43, HX213,  May 03 2013  18:48:57,58.2907,-148.1763, NaN, HX213.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+44, GAK11,  May 03 2013  21:03:46,58.386,-148.0722, NaN, GAK11.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+45, GAK12,  May 03 2013  23:29:33,58.2438,-147.9387, NaN, GAK12.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+46, GAK13,  May 04 2013  02:24:31,58.0968,-147.783, NaN, GAK13.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+46.2, GAK13,  May 04 2013  03:18:17,58.0852,-147.7815, NaN, GAK13-P2.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+46.5, GAK13-FE,  May 04 2013  04:12:30,58.096,-147.7845,NaN, GAK13-Fe.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+47, GAK10,  May 04 2013  16:39:50,58.506,-148.1782, NaN, GAK10.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+48, GAK9I,  May 04 2013  18:45:56,58.6058,-148.2752,711, GAK9i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+49, GAK9,  May 04 2013  19:56:58,58.6758,-148.3458,280, GAK9.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+50, GAK8I,  May 04 2013  21:19:57,58.7447,-148.4202,289, GAK8i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+51, GAK8,  May 04 2013  22:15:04,58.7908,-148.4835,289, GAK8.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+52, GAK7I,  May 04 2013  23:45:19,58.8805,-148.5615,300, GAK7i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+53, GAK7,  May 05 2013  00:48:10,58.9682,-148.6303,244, GAK7.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+54, GAK6I,  May 05 2013  01:57:15,59.0423,-148.6958,197, GAK6i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+55, GAK6,  May 05 2013  03:03:37,59.1208,-148.7653,152, GAK6.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+56, GAK5I,  May 05 2013  15:42:38,59.1725,-148.8418,173, GAK5i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+57, GAK5,  May 05 2013  16:37:38,59.241,-148.9277,167, GAK5.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+58, GAK4I,  May 05 2013  17:57:09,59.3302,-149.002,191, GAK4i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+59, GAK4,  May 05 2013  18:51:02,59.4082,-149.0492,201, GAK4.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+60, GAK3I,  May 05 2013  19:59:08,59.4817,-149.126,206, GAK3i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+61, GAK3,  May 05 2013  21:06:31,59.5475,-149.1897,206, GAK3.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+62, GAK2I,  May 05 2013  22:21:11,59.6248,-149.259,214, GAK2i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+63, GAK2,  May 05 2013  23:15:32,59.6915,-149.3275,227, GAK2.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+64, GAK1I,  May 06 2013  00:23:04,59.7732,-149.3985,263, GAK1i.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+65, GAK1,  May 06 2013  01:17:44,59.8432,-149.4745,271, Gak1.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+66, GAK1,  May 06 2013  02:25:53,59.8435,-149.4667,271, GAK1-iron.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+67, MS4,  May 06 2013  23:50:30,59.9207,-147.826,122, MS4.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+68, MS3,  May 07 2013  00:28:01,59.9323,-147.8533,163, MS3.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+69, MS2,  May 07 2013  01:10:42,59.9438,-147.8992,187, MS2.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+70, MS1,  May 07 2013  01:47:19,59.9532,-147.9243,171, MS1.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+71, CG,  May 07 2013  15:29:12,60.982,-147.0678,193, Columbia.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+72, CG-IRON,  May 07 2013  16:12:15,60.9805,-147.0818,193, Columbia-iron.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+73, PWSB,  May 07 2013  22:23:51,60.7528,-147.217,385, PWSB.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+74, PWSC,  May 07 2013  23:30:05,60.6352,-147.171,241, PWSC.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+75, PWSD,  May 08 2013  00:34:56,60.5238,-147.1312,202, PWSD.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+76, PWSE,  May 08 2013  02:32:30,60.4033,-146.989,210, PWSE.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+77, PWSE2,  May 08 2013  03:32:04,60.407,-146.8338,295, PWSE2.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+78, PWSF,  May 08 2013  04:09:38,60.3992,-146.7492,257, PWSF.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+79, PWSA,  May 08 2013  13:58:56,60.8208,-147.3913,475, PWSA.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+80, PWS3,  May 08 2013  15:49:10,60.669,-147.6687,740, PWS3.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+81, PWS2,  May 08 2013  17:40:09,60.5368,-147.8052,736, PWS2.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+82, PWS1,  May 08 2013  19:31:38,60.3725,-147.9458,346, PWS1.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+83, KIP2,  May 08 2013  20:45:59,60.2787,-147.987,577, KIP2.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n
+84, IB,  May 08 2013  22:59:34,60.2397,-148.3307,123, IB.cnv, SBE9, R/V Tiglax, TXS13, NaN, Hopcroft, Seward Line Monitoring, NPRB, Gulf of Alaska, n

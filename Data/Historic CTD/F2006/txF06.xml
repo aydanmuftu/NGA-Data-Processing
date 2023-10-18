@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href='NBII_classic.xsl' type='text/xsl'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Weingartner, T.J.</origin>
+        <pubdate>Unpublished material</pubdate>
+        <title>Seward Line CTD Data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>http://www.ims.uaf.edu/GLOBEC/</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data was collected by Dr. Tom Weingartner of the Institute of Marine Science, University of Alaska Fairbanks for the Gulf of Alaska LTOP (Long Term Observation Project) funded by the North Pacific Research Board, grant #603. The area of coverage is the Gulf of Alaska during September, 2006. 
+
+This data is divided into 2 parts: Header information is stored in txF06hr.dat and the CTD data is stored in txF06s.dat. Both files are contained within the WinZip archive named TXF06.zip. Both files are self-documented with descriptions of each column's data.                                               
+
+Data was collected on board the R/V Tiglax by a Seabird 25 CTD sampling at 8 frames per second with 1 conductivity sensor and 1 temperature sensor.  Sensors are factory calibrated once per year.  Accuracy of the temperature probes is better than 0.005 degrees C based on manufacturer specifications.  Accuracy of the salinity values is better than 0.02 based on expected maximum drift of conductivity cell between annual factory calibrations. 
+                                                  
+CTD Pressure, Temperature and Salinity data is processed according to Seabird Inc recommended procedures. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions.  Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T &amp; S data only:                        
+   0 = Good Data, 
+   1 = Extrapolated, 
+   2 = Interpolated, 
+   3 = Poor Data Quality For Other Reason        
+                                                                                     
+Data units are decibars for Pressure, degrees Celcius for Termperature and Salinity is reported in terms of Practical Salinity Units (PSU), which are dimensionless. Ancillary data are reported as voltages (full range 0-5 volts) and/or as converted to engineering units described at the top of the data file and have not been subjected to any quality control measures.       
+</abstract>
+      <purpose>Project Summary: The Northern Pacific appears to have undergone a “regime shift” within the past bimodal state that is not typical of previously studied regimes. Regime shifts are often fundamental shifts in ecosystem structure and function, such as the 1976 regime shift change from a shrimp dominated fisheries to one dominated by pollock, salmon and profound impact potential, this proposal seeks to provide observations of the current Gulf of Alaska during 2005. Specifically, we seek to continue the multidisciplinary Gulf of Alaska’s Seward Line conducted by the GLOBEC program for the past 7 years. exception of the Canadian Line-P sampling program to the south, there is no other comprehensive sampling program in the Alaska Gyre that allows observation of long-term changes in of a region that is critical to Alaska’s fisheries, subsistence and tourist economies.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20060914</begdate>
+          <enddate>20060919</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <descgeog>Gulf of Alaska</descgeog>
+      <bounding>
+        <westbc>-152</westbc>
+        <eastbc>-145</eastbc>
+        <northbc>61.5</northbc>
+        <southbc>57.5</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Physical Oceanogrpahy</themekey>
+        <themekey>CTD</themekey>
+        <themekey>Alaska</themekey>
+        <themekey>Gulf of Alaska LTOP</themekey>
+        <themekey>Pressure</themekey>
+        <themekey>Temperature</themekey>
+        <themekey>Salinity</themekey>
+        <themekey>Sigma-T</themekey>
+        <themekey>Delta-D</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Alaska</placekey>
+        <placekey>Gulf of Alaska</placekey>
+        <placekey>Prince William Sound</placekey>
+        <placekey>Resurrection Bay</placekey>
+      </place>
+      <stratum>
+        <stratkt>None</stratkt>
+        <stratkey>1-decibar averaged vertical profile</stratkey>
+      </stratum>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>None</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Thomas J. Weingartner</cntper>
+          <cntorg>University of Alaska Fairbanks, School of Fisheries and Ocean Sciences</cntorg>
+        </cntperp>
+        <cntpos>Professor</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>UAF- SFOS - IMS</address>
+          <address>Rm. 113 O'Neill Building</address>
+          <city>Fairbanks</city>
+          <state>AK</state>
+          <postal>99775-7220</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>(907) 474 7993</cntvoice>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.0000001</latres>
+        <longres>0.0000001</longres>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>CTD Data File</enttypl>
+        <enttypd>Processed data in *.dat file</enttypd>
+        <enttypds>UAF-SFOS</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>pressure</attrlabl>
+        <attrdef>water column pressure measured by the CTD</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>581</rdommax>
+            <attrunit>decibar</attrunit>
+            <attrmres>1.0000</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>consecutive station number</attrlabl>
+        <attrdef>unique number within cruise associated with CTD cast</attrdef>
+        <attrdefs>CTD operator</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>1</rdommin>
+            <rdommax>50</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Dynamic Decibars</attrlabl>
+        <attrdef>water column dynamic height referenced to the surface</attrdef>
+        <attrdefs>http://www.cmar.csiro.au</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>1.5215</rdommax>
+            <attrunit>dynamic decimeters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Sigmt-T</attrlabl>
+        <attrdef>Water column</attrdef>
+        <attrdefs>http://www.cmar.csiro.au</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>15.833</rdommin>
+            <rdommax>27.132</rdommax>
+            <attrunit>kg/m^3</attrunit>
+            <attrmres>0.0010</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>salinity</attrlabl>
+        <attrdef>water column salinity, reported in PSU (Practical Salinity Units)</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>20.947</rdommin>
+            <rdommax>34.163</rdommax>
+            <attrmres>0.0010</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>temperature</attrlabl>
+        <attrdef>water column temperature</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>3.882</rdommin>
+            <rdommax>12.611</rdommax>
+            <attrunit>degrees C</attrunit>
+            <attrmres>0.0010</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Data Quality Flag</attrlabl>
+        <attrdef>Indicates if data has been manipulated by data processing after the manufacturer-prescribed algorithms are implemented.</attrdef>
+        <attrdefs>CTD interpolation/extrapolation subroutine</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>3</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>The following parameters are measured and reported  in the CTD data file and are averaged to 1-decibar levels.
+
+Consecutive Station Number, Pressure (decibar), Data Flag, Temperature (degrees Celcius)	
+Salinity, Sigma-T (kg/m^3), Delta-D (Dynamic Decimeters)</eaover>
+      <eadetcit>see the .readme file</eadetcit>
+    </overview>
+  </eainfo>
+  <metainfo>
+    <metd>20071205</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Seth Danielson</cntper>
+          <cntorg>UAF-SFOS-IMS</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>UAF-SFOS-IMS</address>
+          <address>Rm. 114 O'Niell Building</address>
+          <city>Fairbanks</city>
+          <state>AK</state>
+          <postal>99775-7220</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice missing="True" />
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001.1-1999</metstdv>
+  </metainfo>
+</metadata>

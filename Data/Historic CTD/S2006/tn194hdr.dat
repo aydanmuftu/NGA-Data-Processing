@@ -1,0 +1,47 @@
+% Columns:
+% 1. Instrument
+% 2. Date
+% 3. Latitude
+% 4. Longitude
+% 5. GMT
+% 6. Vessel
+% 7. Cruise
+% 8. Station Name
+% 9. Consecutive Station Number
+% 10. Station Bottom Depth
+% 11. Principal Investigator
+% 12. Project
+% 13. Funding Agency
+% 14. Geographic Region
+SBE911+, May 14 2006,60.025,-149.3575, 21:07:51,TN,TN194, RES2.5 ,19400101,297, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 14 2006,59.845,-149.4663, 23:00:10,TN,TN194, GAK1,19400201,273, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 14 2006,59.8448,-149.4665, 23:42:29,TN,TN194, GAK1,19400202,273, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.7663,-149.396, 01:26:16,TN,TN194, GAK1I,19400301,262, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.6908,-149.3253, 02:39:33,TN,TN194, GAK2,19400401,227, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.6262,-149.257, 04:02:02,TN,TN194, GAK2I,19400501,215, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.5532,-149.189, 14:47:11,TN,TN194, GAK3,19400601,212, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.4812,-149.1172, 16:06:02,TN,TN194, GAK3I,19400701,203, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.408,-149.0472, 17:06:41,TN,TN194, GAK4,19400801,200, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.408,-149.0473, 17:44:08,TN,TN194, GAK4,19400802,200, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.3353,-148.9778, 19:15:00,TN,TN194, GAK4I,19400901,196, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.2622,-148.9085, 20:14:00,TN,TN194, GAK5,19401001,169, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.1902,-148.8392, 21:42:07,TN,TN194, GAK5I ,19401101,168, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 15 2006,59.1167,-148.7692, 22:46:28,TN,TN194, GAK6,19401201,154, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,59.0447,-148.6992, 00:06:25,TN,TN194, GAK6I ,19401301,194, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.9712,-148.6288, 01:06:25,TN,TN194, GAK7 ,19401401,246, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.881,-148.5585, 02:32:51,TN,TN194, GAK7I ,19401501,296, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.7903,-148.4895, 03:41:09,TN,TN194, GAK8,19401601,289, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.743,-148.4193, 05:04:36,TN,TN194, GAK8I ,19401701,290, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.6798,-148.3502, 14:05:22,TN,TN194, GAK9 ,19401801,280, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.6798,-148.3498, 15:11:16,TN,TN194, GAK9 ,19401802,280, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.611,-148.2777, 16:09:21,TN,TN194, GAK9I,19401901,681, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.5413,-148.2112, 17:37:58,TN,TN194, GAK10,19402001,1455, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.3885,-148.0715, 20:10:38,TN,TN194, GAK11,19402101,1419, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 16 2006,58.2432,-147.9333, 22:54:08,TN,TN194, GAK12,19402201,2145, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 17 2006,58.0978,-147.7942, 01:30:55,TN,TN194, GAK13 ,19402301,2076, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 17 2006,58.096,-147.7955, 03:22:49,TN,TN194, GAK13 ,19402302,2074, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 17 2006,60.2783,-147.9855, 21:51:51,TN,TN194, KIP2 ,19402401,580, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 17 2006,60.2782,-147.9862, 22:39:17,TN,TN194, KIP2 ,19402402,589, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 18 2006,60.3797,-147.9367, 00:49:30,TN,TN194, PWS1 ,19402501,350, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 18 2006,60.5352,-147.8042, 02:48:27,TN,TN194, PWS2 ,19402601,728, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 
+SBE911+, May 18 2006,59.845,-149.467, 16:39:35,TN,TN194, GAK1,19402701,265, Weingartner, Gulf of Alaska LTOP, NPRB, Gulf of Alaska 

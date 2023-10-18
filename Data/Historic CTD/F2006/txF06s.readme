@@ -1,0 +1,13 @@
+This data was collected by Dr. Tom Weingartner of the Institute of Marine Science, University of Alaska Fairbanks for the Gulf of Alaska LTOP (Long Term Observation Project) funded by the North Pacific Research Board, grant #603. The area of coverage is the Gulf of Alaska during September, 2006. 
+
+This data is divided into 2 parts: Header information is stored in txF06hr.dat and the CTD data is stored in txF06s.dat. Both files are contained within the WinZip archive named TXF06.zip. Both files are self-documented with descriptions of each column's data.                                               
+
+Data was collected on board the R/V Tiglax by a Seabird 25 CTD sampling at 8 frames per second with 1 conductivity sensor and 1 temperature sensor.  Sensors are factory calibrated once per year. 
+                                                  
+CTD Pressure, Temperature and Salinity data is processed according to Seabird Inc recommended procedures. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions.  Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T & S data only:                        
+   0 = Good Data, 
+   1 = Extrapolated, 
+   2 = Interpolated, 
+   3 = Poor Data Quality For Other Reason        
+                                                                                     
+Data units are decibars for Pressure, degrees Celcius for Termperature and Salinity is reported in terms of Practical Salinity Units (PSU), which are dimensionless. Ancillary data are reported as voltages (full range 0-5 volts) and/or as converted to engineering units described at the top of the data file and have not been subjected to any quality control measures.       

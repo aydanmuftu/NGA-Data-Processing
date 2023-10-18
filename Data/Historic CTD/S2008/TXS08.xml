@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href='http://s3.nprb.org/datasets/nbii_nprb_classic.xsl' type='text/xsl'?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://s3.nprb.org/datasets/fgdc-std-001.1-1999.xsd">
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Weingartner, T.J.</origin>
+        <pubdate>Unpublished material</pubdate>
+        <title>Seward Line CTD Data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>http://www.ims.uaf.edu/GLOBEC/</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract><![CDATA[<p>This data was collected by Dr. Tom Weingartner of the Institute of Marine Science, University of Alaska Fairbanks for the Gulf of Alaska LTOP (Long Term Observation Project) funded by the North Pacific Research Board, grant #708. The area of coverage is the Gulf of Alaska during May, 2008.</p> 
+<p>This data is divided into 2 parts: Header information is stored in txS08hr.dat and the CTD data is stored in txS08s.dat. Both files are contained within the WinZip archive named TXS08.zip. Both files are self-documented with descriptions of each column's data.</p>
+<p>Data was collected on board the R/V Tiglax by a Seabird 911 Plus CTD sampling at 24 frames per second with 2 conductivity and 2 temperature sensors.  Sensors are factory calibrated once per year.  Accuracy of the temperature probes is better than 0.005 degrees C based on manufacturer specifications.  Accuracy of the salinity values is better than 0.02 based on expected maximum drift of conductivity cell between annual factory calibrations.</p>  
+<p>CTD Pressure, Temperature and Salinity data is processed according to Seabird Inc recommended procedures. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions.  Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T &amp; S data only:                        
+<ul>
+<li>0 = Good Data,</li>
+<li>1 = Extrapolated,</li>
+<li>2 = Interpolated,</li>
+<li>3 = Poor Data Quality For Other Reason.</li>
+</ul>
+</p>                                                                                     
+<p>Data units are decibars for Pressure, degrees Celcius for Termperature and Salinity is reported in terms of Practical Salinity Units (PSU), which are dimensionless. Ancillary data are reported as voltages (full range 0-5 volts) and/or as converted to engineering units described at the top of the data file and have not been subjected to any quality control measures.</p>       
+]]></abstract>
+      <purpose>Project Summary: The Northern Pacific appears to have undergone a “regime shift” within the past bimodal state that is not typical of previously studied regimes. Regime shifts are often fundamental shifts in ecosystem structure and function, such as the 1976 regime shift change from a shrimp dominated fisheries to one dominated by pollock, salmon and profound impact potential, this proposal seeks to provide observations of the current Gulf of Alaska during 2008. Specifically, we seek to continue the multidisciplinary Gulf of Alaska’s Seward Line conducted by the GLOBEC program over 1998-2005. With the exception of the Canadian Line-P sampling program to the south, there is no other comprehensive sampling program in the Alaska Gyre that allows observation of long-term changes in of a region that is critical to Alaska’s fisheries, subsistence and tourist economies.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20070507</begdate>
+          <enddate>20070511</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <descgeog>Gulf of Alaska</descgeog>
+      <bounding>
+        <westbc>-152</westbc>
+        <eastbc>-145</eastbc>
+        <northbc>61.5</northbc>
+        <southbc>57.5</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Physical Oceanogrpahy</themekey>
+        <themekey>CTD</themekey>
+        <themekey>Alaska</themekey>
+        <themekey>Gulf of Alaska LTOP</themekey>
+        <themekey>Pressure</themekey>
+        <themekey>Temperature</themekey>
+        <themekey>Salinity</themekey>
+        <themekey>Sigma-T</themekey>
+        <themekey>Delta-D</themekey>
+        <themekey>PAR</themekey>
+        <themekey>Fluorometer</themekey>
+        <themekey>Photosynthetically Available Radiation</themekey>
+        <themekey>PAR</themekey>
+        <themekey>Transmissometer</themekey>
+        <themekey>Altimeter</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Alaska</placekey>
+        <placekey>Gulf of Alaska</placekey>
+        <placekey>Prince William Sound</placekey>
+        <placekey>Resurrection Bay</placekey>
+      </place>
+      <stratum>
+        <stratkt>None</stratkt>
+        <stratkey>1-decibar averaged vertical profile</stratkey>
+      </stratum>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>None</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Thomas J. Weingartner</cntper>
+          <cntorg>University of Alaska Fairbanks, School of Fisheries and Ocean Sciences</cntorg>
+        </cntperp>
+        <cntpos>Professor</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>UAF- SFOS - IMS</address>
+          <address>Rm. 113 O'Neill Building</address>
+          <city>Fairbanks</city>
+          <state>AK</state>
+          <postal>99775-7220</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>(907) 474 7993</cntvoice>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr><![CDATA[<p>Data was collected on board the R/V Tiglax by a Seabird 911 Plus CTD sampling at 24 frames per second with 2 conductivity and 2 temperature sensors.  Sensors are factory calibrated once per year.  Accuracy of the temperature probes is better than 0.005 degrees C based on manufacturer specifications.  Accuracy of the salinity values is better than 0.02 based on expected maximum drift of conductivity cell between annual factory calibrations.</p>  
+<p>CTD Pressure, Temperature and Salinity data is processed according to Seabird Inc recommended procedures. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions.  Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T &amp; S data only:                        
+<ul>
+  <li>0 = Good Data,</li>
+  <li>1 = Extrapolated,</li>
+  <li>2 = Interpolated,</li>
+  <li>3 = Poor Data Quality For Other Reason.</li>
+</ul></p>                                                                                     
+<p>Data units are decibars for Pressure, degrees Celcius for Termperature and Salinity is reported in terms of Practical Salinity Units (PSU), which are dimensionless. Ancillary data are reported as voltages (full range 0-5 volts) and/or as converted to engineering units described at the top of the data file and have not been subjected to any quality control measures</p>]]></attraccr>
+    </attracc>
+    <logic>not entered</logic>
+    <complete>not entered</complete>
+    <lineage>
+      <method>
+        <methtype>Field</methtype>
+        <methdesc>Data was collected on board the R/V Tiglax by a Seabird 911 Plus CTD sampling at 24 frames per second with 2 conductivity and 2 temperature sensors.</methdesc>
+      </method>
+      <procstep>
+        <procdesc>No process steps have been described for this data set</procdesc>
+        <procdate>Unknown</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.000001</latres>
+        <longres>0.000001</longres>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>World Geodetic System of 1984</horizdn>
+        <ellips>World Geodetic System of 1984</ellips>
+        <semiaxis>6378137</semiaxis>
+        <denflat>298.25722210088</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>CTD Data File</enttypl>
+        <enttypd>Processed data in txS08s.dat file</enttypd>
+        <enttypds>UAF-SFOS</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>consecutive station number</attrlabl>
+        <attrdef>unique number within cruise associated with CTD cast</attrdef>
+        <attrdefs>CTD operator</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>1</rdommin>
+            <rdommax>35</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>pressure</attrlabl>
+        <attrdef>water column pressure measured by the CTD</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>731</rdommax>
+            <attrunit>decibar</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Data Quality Flag</attrlabl>
+        <attrdef>Indicates if data has been manipulated by data processing after the manufacturer-prescribed algorithms are implemented.</attrdef>
+        <attrdefs>CTD interpolation/extrapolation subroutine</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>2</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>temperature</attrlabl>
+        <attrdef>water column temperature</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>3.796</rdommin>
+            <rdommax>8.078</rdommax>
+            <attrunit>degrees C</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>salinity</attrlabl>
+        <attrdef>water column salinity, reported in PSU (Practical Salinity Units)</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>30.395</rdommin>
+            <rdommax>33.941</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Sigmt-T</attrlabl>
+        <attrdef>Water column</attrdef>
+        <attrdefs>http://www.cmar.csiro.au</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>24.01</rdommin>
+            <rdommax>26.873</rdommax>
+            <attrunit>kg/m^3</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Dynamic Decibars</attrlabl>
+        <attrdef>water column dynamic height referenced to the surface</attrdef>
+        <attrdefs>http://www.cmar.csiro.au</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>1.730007</rdommax>
+            <attrunit>dynamic decibars</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Fluorescence</attrlabl>
+        <attrdef>water column fluorescence measured by the CTD, reported in volts</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>1.1214</rdommax>
+            <attrunit>Volts</attrunit>
+          </rdom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>12.137</rdommax>
+            <attrunit>ug/l</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PAR</attrlabl>
+        <attrdef>water column photosynthetically available radiation</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.103</rdommin>
+            <rdommax>3.369</rdommax>
+            <attrunit>Volts</attrunit>
+          </rdom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.3</rdommin>
+            <rdommax>615.6</rdommax>
+            <attrunit>uE/ m^2/s</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Altimeter</attrlabl>
+        <attrdef>Height above the bottom</attrdef>
+        <attrdefs>www.seabird.com</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-0.657</rdommin>
+            <rdommax>10.097</rdommax>
+            <attrunit>m</attrunit>
+          </rdom>
+        </attrdomv>
+        <attrdomv>
+          <rdom>
+            <rdommin>-13.1</rdommin>
+            <rdommax>201.9</rdommax>
+            <attrunit>Volts</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>CTD Header file</enttypl>
+        <enttypd>txS08hdr.dat Header File</enttypd>
+        <enttypds>University of Alaska Fairbanks</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Instrument</attrlabl>
+        <attrdef>Instrument used to obtain data</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>The instrument used to collect the data: SBE911+</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Date</attrlabl>
+        <attrdef>The date on which the data was collected</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>May 2, 2008</rdommin>
+            <rdommax>May 7, 2008</rdommax>
+          </rdom>
+        </attrdomv>
+        <attrdomv>
+          <udom>The date on which the data was collected:  mm/dd/yyyy</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Latitude</attrlabl>
+        <attrdef>The geographic latitude of the data collection</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>58.6792</rdommin>
+            <rdommax>60.5393</rdommax>
+            <attrunit>decimal degrees</attrunit>
+            <attrmres>0.0001</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Longitude</attrlabl>
+        <attrdef>The geographic longitude of the data collection</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-149.469</rdommin>
+            <rdommax>-147.8015</rdommax>
+            <attrunit>decimal degrees</attrunit>
+            <attrmres>0.0001</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GMT</attrlabl>
+        <attrdef>GMT Time of the data collection</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>Time of data collection hh:mm:ss</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Vessel</attrlabl>
+        <attrdef>The vessel from which the data was collected</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>TN</edomv>
+            <edomvd>R/V Thomson</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>TX</edomv>
+            <edomvd>R/V Tiglax</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Cruise</attrlabl>
+        <attrdef>The cruise designation from which the data was collected</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>Code for cruise designation</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Station Name</attrlabl>
+        <attrdef>The given station name to the sampling location</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>RES2.5</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK1</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAKi</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK2</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK2i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK3</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK3i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK4</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK4i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK5</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK5i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK6</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK6i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK7</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK7i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK8</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK8i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK9</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK9i</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK10</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK11</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK12</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK13</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>PWS1</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>PWS2</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>PWS3</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>KIP1</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>KIP2</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>MS1</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>MS2</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>MS3</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>MS4</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>HB1</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>HB2</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>HB3</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>HB4</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK1P</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK9P</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+            <edomv>GAK13P</edomv>
+            <edomvd>Station Name</edomvd>
+            <edomvds>UAF-SFOS</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Consecutive Station Number</attrlabl>
+        <attrdef>The consecutive Station number from which the data was obtained</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>1</rdommin>
+            <rdommax>35</rdommax>
+            <attrunit>unit</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Station Bottom Depth</attrlabl>
+        <attrdef>The bottom depth (m) at the sampling location</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>152</rdommin>
+            <rdommax>732</rdommax>
+            <attrunit>meters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Principal Investigator</attrlabl>
+        <attrdef>The Principal Investigator for the project</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>Principal Investigator : Weingartner</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Project</attrlabl>
+        <attrdef>The title of the project</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>Project Name</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Funding Agency</attrlabl>
+        <attrdef>The funding agency providing the funds for the current project</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>Funding Agency : NPRB</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Geographic Region</attrlabl>
+        <attrdef>The Geographic Region of the project</attrdef>
+        <attrdefs>UAF-SFOS</attrdefs>
+        <attrdomv>
+          <udom>Geographic Region : Gulf of Alaska</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover><![CDATA[The following parameters are measured and reported  in the CTD data file and are averaged to 1-decibar levels.
+<ul>
+<li>Consecutive Station Number,</li>
+<li>Pressure (decibar),</li>
+<li>Data Flag,</li>
+<li>Temperature (degrees Celcius),</li>	
+<li>Salinity,</li>
+<li>Sigma-T (kg/m^3),</li>
+<li>Delta-D (Dynamic Decimeters),</li>
+<li>Fluorometer (V),</li>
+<li>PAR (V),</li>
+<li>Altimeter (V)</li>
+</ul>
+]]></eaover>
+      <eadetcit>see the .readme file</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Igor Katrayev</cntper>
+        </cntperp>
+        <cntpos>Data Systems Manager</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>107W 3rd Ave</address>
+          <city>Anchorage</city>
+          <state>Alaska</state>
+          <postal>99501</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>1-907-644-6700</cntvoice>
+        <cntvoice>1-907-644-6711</cntvoice>
+        <cntfax>1-907-644-6780</cntfax>
+        <cntemail>admin@nprb.org</cntemail>
+        <cntemail>igor.katrayev@nprb.org</cntemail>
+      </cntinfo>
+    </distrib>
+    <resdesc>NPRB.2008.04.TXS08_CTD</resdesc>
+    <distliab>No warranty expressed or implied is made regarding the accuracy or utility of the data, nor shall the act of distribution constitute any such warranty. This disclaimer applies both to individual use of the data and aggregate use with other data.
+      It is strongly recommended that careful attention be paid to the contents of the metadata file associated with the data. The NPRB shall not be held liable for improper or incorrect use of the data described and/or contained herein.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>CTD</formname>
+          <formcont>http://en.wikipedia.org/wiki/Conductivity,_temperature,_depth</formcont>
+          <filedec>ZIP compression applied: http://en.wikipedia.org/wiki/ZIP_(file_format)</filedec>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>http://s3.nprb.org/data/2008/04/NPRB.2008.04.TXS08_CTD.zip</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>No fees</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20110914</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Seth Danielson</cntper>
+          <cntorg>UAF-SFOS-IMS</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>UAF-SFOS-IMS</address>
+          <address>Rm. 114 O'Niell Building</address>
+          <city>Fairbanks</city>
+          <state>AK</state>
+          <postal>99775-7220</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>(907) 474 7834</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001.1-1999</metstdv>
+  </metainfo>
+</metadata>

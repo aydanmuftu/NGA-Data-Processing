@@ -1,0 +1,48 @@
+% Columns:
+% 1. Instrument
+% 2. Date
+% 3. Latitude
+% 4. Longitude
+% 5. GMT
+% 6. Vessel
+% 7. Cruise
+% 8. Station Name
+% 9. Consecutive Station Number
+% 10. Station Bottom Depth
+% 11. Principal Investigator
+% 12. Project
+% 13. Funding Agency
+% 14. Geographic Region
+SBE911+,5/8/2005,60.0248,-149.3582,18:48:44,TN,TN179,1,RES2.5,295,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/8/2005,59.8448,-149.4665,20:44:59,TN,TN179,2,GAK1,272.4,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/8/2005,59.8448,-149.4662,21:37:59,TN,TN179,3,GAK1,273.3,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/8/2005,59.7665,-149.3963,23:30:13,TN,TN179,4,GAK1I,261.9,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.6915,-149.3258,0:34:46,TN,TN179,5,GAK2,228,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.6265,-149.2578,2:00:08,TN,TN179,6,GAK2I,236.8,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.553,-149.1878,3:09:46,TN,TN179,7,GAK3,214,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.4815,-149.1187,15:17:20,TN,TN179,8,GAK3I,206.1,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.408,-149.0482,16:29:46,TN,TN179,9,GAK4,199.9,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.408,-149.0482,17:06:52,TN,TN179,10,GAK4,199.9,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.3348,-148.978,18:56:54,TN,TN179,11,GAK4I,196,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.2617,-148.9082,19:59:06,TN,TN179,12,GAK5,169.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.1898,-148.838,21:14:46,TN,TN179,13,GAK5I,168.5,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.1207,-148.77,22:16:24,TN,TN179,14,GAK6,152.1,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/9/2005,59.045,-148.7007,23:37:01,TN,TN179,15,GAK6I,193.8,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.9715,-148.6297,0:46:17,TN,TN179,16,GAK7,246.2,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.8812,-148.56,2:33:22,TN,TN179,17,GAK7I,301.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.7915,-148.4903,3:48:09,TN,TN179,18,GAK8,292.5,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.7428,-148.42,5:04:25,TN,TN179,19,GAK8I,289.5,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.6798,-148.3502,14:11:58,TN,TN179,20,GAK9,279.7,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.6798,-148.3502,14:56:38,TN,TN179,21,GAK9,278.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.6113,-148.2783,16:46:29,TN,TN179,22,GAK9I,678.8,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.5417,-148.212,18:12:03,TN,TN179,23,GAK10,1451.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.388,-148.0707,21:03:43,TN,TN179,24,GAK11,1421.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/10/2005,58.243,-147.9345,23:10:56,TN,TN179,25,GAK12,2140.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/11/2005,58.0983,-147.7933,3:03:55,TN,TN179,26,GAK13,2076.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/11/2005,58.0982,-147.7933,6:18:18,TN,TN179,27,GAK13,2067.6,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/11/2005,60.2783,-147.9867,21:21:14,TN,TN179,28,KIP2,593.2,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/11/2005,60.2783,-147.9867,22:16:40,TN,TN179,29,KIP2,593.8,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/12/2005,60.3798,-147.9362,0:22:29,TN,TN179,30,PWS1,352.8,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/12/2005,60.535,-147.8032,2:07:30,TN,TN179,31,PWS2,747.9,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/12/2005,60.535,-147.8035,3:06:39,TN,TN179,32,PWS2,732.7,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
+SBE911+,5/12/2005,59.845,-149.4662,16:37:35,TN,TN179,33,GAK1,284.7,Weingartner,Gulf of Alaska LTOP,NPRB,Gulf of Alaska
